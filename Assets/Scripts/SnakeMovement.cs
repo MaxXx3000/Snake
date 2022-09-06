@@ -7,13 +7,8 @@ using UnityEngine.Tilemaps;
 
 public class SnakeMovement : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    public float ForwardSpeed = 5;
-    public float Sensitivity = 10;
-=======
     private float ForwardSpeed;
     public float Sensitivity;
->>>>>>> Stashed changes
 
     public int Length;
     public GameManager GameManager;
