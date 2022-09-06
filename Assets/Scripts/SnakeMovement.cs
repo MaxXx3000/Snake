@@ -7,8 +7,13 @@ using UnityEngine.Tilemaps;
 
 public class SnakeMovement : MonoBehaviour
 {
+<<<<<<< Updated upstream
     public float ForwardSpeed = 5;
     public float Sensitivity = 10;
+=======
+    private float ForwardSpeed;
+    public float Sensitivity;
+>>>>>>> Stashed changes
 
     public int Length;
     public GameManager GameManager;
@@ -40,11 +45,17 @@ public class SnakeMovement : MonoBehaviour
         if(Game.LevelIndex == 1)
         {
             Length = 1;
+            ForwardSpeed = 2;
         }
         else
         {
             Length = Game.SnakeLenght;
-        }        
+            ForwardSpeed += Game.LevelIndex;
+            if(ForwardSpeed > 6)
+            {
+                ForwardSpeed = 2;
+            }
+        }
         for (int i = 0; i < Length; i++) componentSnakeTail.AddCircle();
 
         PointsText.SetText(Length.ToString());        

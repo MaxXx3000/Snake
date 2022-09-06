@@ -13,8 +13,6 @@ public class GameManager : MonoBehaviour
     public Text TextMaxLevel;
     public Text TextScore;
 
-    public Game Game;
-
     [Header("Builder")]
     [Space(10)]
 
@@ -43,6 +41,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] FoodPrefabs;
     public GameObject[] WallPrefabs;
     public SnakeMovement SnakeMovement;
+    public Game Game;
 
     private int randomBlockPrefab;
     private int randomFoodPrefab;
@@ -61,7 +60,6 @@ public class GameManager : MonoBehaviour
         GameObject tmpTile = Instantiate(finishPrefab);
         tmpTile.transform.position = new Vector3(0, 1, LevelLength - 1);
         finishZ = tmpTile.transform.position.z;
-        LevelLong = LevelLength + (Game.LevelIndex) * 10;
         TextLevel.text = "Level " + (Game.LevelIndex).ToString();
         TextBestScore.text = "Best Score " + (Game.BestScore).ToString();
         TextMaxLevel.text = "Max Level " + (Game.MaxLevel).ToString();
@@ -70,13 +68,14 @@ public class GameManager : MonoBehaviour
     //Создание уровня по ширине и длине
     public void CreatLevel()
     {
+        LevelLength += Game.LevelIndex * 10;
         List<TileObject> visualGrid = new List<TileObject>();
 
-        for (int z = 0; z < LevelLength; z++)
+        for (int z = -5; z < LevelLength; z++)
         {
-            for (int x = -LevelWidth / 2 - 1; x < LevelWidth / 2 + 1; x++)
+            for (int x = -LevelWidth * 2; x < LevelWidth * 2; x++)
             {
-                if (x == -LevelWidth / 2 - 1 || x == LevelWidth / 2)
+                if (x <= -LevelWidth / 2 - 1 || x >= LevelWidth / 2)
                 { 
                     for (int y = 0; y < 2; y++)
                     {
