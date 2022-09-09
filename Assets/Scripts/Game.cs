@@ -19,7 +19,6 @@ public class Game : MonoBehaviour
     public State CurrentState { get; private set; }
     public int Currentcore;
     public int Currentlenght = 2;
-    public int Long;
     public void OnPlayerDied()
     {
         if (CurrentState != State.Playing) return;
@@ -53,7 +52,6 @@ public class Game : MonoBehaviour
             BestScore = Score;
         }
         LevelIndex++;
-        Long = LevelIndex * 10;
         Debug.Log("You won");
         Invoke("ReloadLevel", 2);
     }

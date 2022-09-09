@@ -8,6 +8,6 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         Time.timeScale = 0f;
-        SceneManager.LoadScene("Menu", LoadSceneMode.Additive); ;
+        SceneManager.LoadScene(0, LoadSceneMode.Additive);
     }
 }
