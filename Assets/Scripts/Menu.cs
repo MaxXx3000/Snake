@@ -8,13 +8,11 @@ public class Menu : MonoBehaviour
     
     private void Start()
     {
-        Time.timeScale = 0f; 
-        SceneManager.LoadScene(1, LoadSceneMode.Additive);
+        Time.timeScale = 0f;
     }
     public void PlayGame()
     {
         Time.timeScale = 1f;
-        SceneManager.UnloadSceneAsync(0);
     }
 
     public void ExitGame()
@@ -27,6 +25,6 @@ public class Menu : MonoBehaviour
     {
         Time.timeScale = 1f;
         FindObjectOfType<Game>().OnPlayerDied();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
