@@ -120,6 +120,6 @@ public class Game : MonoBehaviour
             MaxLevel = LevelIndex;
         }
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(1);
     }
 }
