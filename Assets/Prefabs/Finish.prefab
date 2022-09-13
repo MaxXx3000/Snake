@@ -55,7 +55,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -228,6 +228,10 @@ PrefabInstance:
     - target: {fileID: 4402899728997055868, guid: 55e7d0517a0aba849a7fe2800506ae9e, type: 3}
       propertyPath: m_Size.x
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380747431836906412, guid: 55e7d0517a0aba849a7fe2800506ae9e, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 257
       objectReference: {fileID: 0}
     - target: {fileID: 6920958152305485982, guid: 55e7d0517a0aba849a7fe2800506ae9e, type: 3}
       propertyPath: m_Name
