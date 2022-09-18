@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
 
     [Range(0, 1)]
     public float obstacleChance = 0.2f;
+    public float foodChance = 0.2f;
     public float obstacleNature = 0.3f;
     public float wallChance = 0.2f;
     bool isBlock = false;
@@ -120,7 +121,12 @@ public class GameManager : MonoBehaviour
                 //Создание еды
                 if (z % 9 != 0 && z > 5 && z < LevelLength - 5)
                 {
-                    bool spawnObstacle = Random.value <= obstacleChance;
+                    if (SnakeMovement.Length > 50)
+                    {
+                        foodChance = 0.05f;
+                    }
+
+                    bool spawnObstacle = Random.value <= foodChance;
 
                     if (spawnObstacle)
                     {
@@ -164,10 +170,16 @@ public class GameManager : MonoBehaviour
             {
                 randomBlockPrefab = Random.Range(0, 9);
             }
+
+            if(SnakeMovement.Length > 50)
+            {
+                randomBlockPrefab = Random.Range(5, 9);
+            }
             
             GameObject block = Instantiate(BlockPrefabs[randomBlockPrefab], transform);
             spawnedObstacle = Instantiate(block);
             spawnedObstacle.name = "Block " + xPos + " - " + zPos;
+            spawnedObstacle.transform.position = new Vector3(xPos, 1, zPos);
         }
         else
         {
@@ -175,9 +187,9 @@ public class GameManager : MonoBehaviour
             GameObject food = Instantiate(FoodPrefabs[randomFoodPrefab], transform);
             spawnedObstacle = Instantiate(food);
             spawnedObstacle.name = "Food " + xPos + " - " + zPos;
+            spawnedObstacle.transform.position = new Vector3(xPos, 0.5f, zPos);
         }
 
-        spawnedObstacle.transform.position = new Vector3(xPos, 1, zPos);
         spawnedObstacle.transform.SetParent(resourceHolder);
     }
     

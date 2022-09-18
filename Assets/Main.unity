@@ -1168,6 +1168,7 @@ MonoBehaviour:
   SnakeMovement: {fileID: 243540403}
   Game: {fileID: 243540411}
   obstacleChance: 0.3
+  foodChance: 0.2
   obstacleNature: 0.3
   wallChance: 0.3
   finishZ: 0
