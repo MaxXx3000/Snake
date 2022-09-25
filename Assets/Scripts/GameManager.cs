@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
 
         for (int z = -5; z < LevelLength; z++)
         {
-            for (int x = -LevelWidth * 4; x < LevelWidth * 4; x++)
+            for (int x = -LevelWidth * 2; x < LevelWidth * 2; x++)
             {
                 if (x <= -LevelWidth / 2 - 1 || x >= LevelWidth / 2)
                 { 
@@ -167,12 +167,12 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(1, 10);
+                blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(1, 20);
             }
 
             if(SnakeMovement.Length > 50)
             {
-                blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(6, 10);
+                blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(10, 20);
             }
             
             spawnedObstacle = Instantiate(blockPrefab, transform);

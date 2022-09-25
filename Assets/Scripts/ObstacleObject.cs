@@ -13,7 +13,8 @@ public class ObstacleObject : MonoBehaviour
     public int hp;
     public float floatHP;
     public float hpf;
-    public float hpMax = 10f;
+    public float hpMax = 20f;
+    public int tmplMax = 20;
 
     public enum ObststacleType
     {
