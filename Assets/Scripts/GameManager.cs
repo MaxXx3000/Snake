@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public ObstacleObject ObstacleObject;
+
     [Header("Score")]
     [Space(10)]
     public Text TextLevel;
@@ -164,27 +166,30 @@ public class GameManager : MonoBehaviour
         {
             if(Game.LevelIndex == 1)
             {
-                randomBlockPrefab = Random.Range(0, 4);
+                //randomBlockPrefab = Random.Range(0, 4);
+                blockPrefab.GetComponent<ObstacleObject>().HP = Random.Range(1, 5);
             }
             else
             {
-                randomBlockPrefab = Random.Range(0, 9);
+                //randomBlockPrefab = Random.Range(0, 9);
+                blockPrefab.GetComponent<ObstacleObject>().HP = Random.Range(1, 10);
             }
 
             if(SnakeMovement.Length > 50)
             {
-                randomBlockPrefab = Random.Range(5, 9);
+                //randomBlockPrefab = Random.Range(5, 9);
+                blockPrefab.GetComponent<ObstacleObject>().HP = Random.Range(6, 10);
             }
-            
-            //GameObject block = Instantiate(BlockPrefabs[randomBlockPrefab], transform);
-            spawnedObstacle = Instantiate(BlockPrefabs[randomBlockPrefab], transform);
+
+            //spawnedObstacle = Instantiate(BlockPrefabs[randomBlockPrefab], transform);
+            blockPrefab.GetComponent<Renderer>().material.SetFloat("FloatHP", (ObstacleObject.HP / 10));
+            spawnedObstacle = Instantiate(blockPrefab, transform);
             spawnedObstacle.name = "Block " + xPos + " - " + zPos;
             spawnedObstacle.transform.position = new Vector3(xPos, 1, zPos);
         }
         else
         {
             randomFoodPrefab = Random.Range(0, 4);
-            //GameObject food = Instantiate(FoodPrefabs[randomFoodPrefab], transform);
             spawnedObstacle = Instantiate(FoodPrefabs[randomFoodPrefab], transform);
             spawnedObstacle.name = "Food " + xPos + " - " + zPos;
             spawnedObstacle.transform.position = new Vector3(xPos, 1, zPos);
@@ -209,7 +214,6 @@ public class GameManager : MonoBehaviour
         GameObject sawnedNature = null;
 
         randomNaturePrefab = Random.Range(0, 22);
-        //GameObject nature = Instantiate(NaturePrefabs[randomNaturePrefab], transform);
         sawnedNature = Instantiate(NaturePrefabs[randomNaturePrefab], transform);
         sawnedNature.name = "Nature " + xNature + " - " + zNature;
         sawnedNature.transform.position = new Vector3(xNature, 1.5f, zNature);

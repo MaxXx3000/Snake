@@ -13,6 +13,7 @@ public class SnakeMovement : MonoBehaviour
     public int Length;
     public GameManager GameManager;
     public Game Game;
+    public ObstacleObject ObstacleObject;
 
     public TextMeshPro PointsText;
 
@@ -96,11 +97,12 @@ public class SnakeMovement : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Block")
         {
+            //int damage = TryGetComponent<ObstacleObject.HP>(gameObject);
             stone.Play();
             stoneCrush.Play();
             Debug.Log("Block");
             Object.Destroy(collision.gameObject, 0.3f);
-            Length--;
+            Length -= ObstacleObject.HP;
             componentSnakeTail.RemoveCircle();
             PointsText.SetText(Length.ToString());
             if(Length < 1)
