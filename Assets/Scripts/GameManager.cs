@@ -37,14 +37,10 @@ public class GameManager : MonoBehaviour
     public GameObject foodPrefab;
     public GameObject blockPrefab;
     public GameObject wallPrefab;
-    public GameObject naturePrefab;
     public GameObject finishPrefab;
     public Transform resourceHolder;
     public Transform wallHolder;
-    public GameObject[] BlockPrefabs;
-    public GameObject[] FoodPrefabs;
     public GameObject[] NaturePrefabs;
-    public GameObject[] WallPrefabs;
     public SnakeMovement SnakeMovement;
     public Game Game;
 
@@ -52,8 +48,6 @@ public class GameManager : MonoBehaviour
     private int randomFoodPrefab;
     private int randomWallPrefab;
     private int randomNaturePrefab;
-
-    public float floatHP = 0f;
 
     [Range(0, 1)]
     public float obstacleChance = 0.2f;
@@ -63,6 +57,7 @@ public class GameManager : MonoBehaviour
     bool isBlock = false;
     public float finishZ;
     public int LevelLong;
+    public int blockHP;
 
     private void Start()
     {
@@ -168,36 +163,26 @@ public class GameManager : MonoBehaviour
         {
             if(Game.LevelIndex == 1)
             {
-                //randomBlockPrefab = Random.Range(0, 4);
                 blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(1, 5);
             }
             else
             {
-                //randomBlockPrefab = Random.Range(0, 9);
                 blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(1, 10);
             }
 
             if(SnakeMovement.Length > 50)
             {
-                //randomBlockPrefab = Random.Range(5, 9);
                 blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(6, 10);
             }
-
-            //spawnedObstacle = Instantiate(BlockPrefabs[randomBlockPrefab], transform);
             
             spawnedObstacle = Instantiate(blockPrefab, transform);
             spawnedObstacle.name = "Block " + xPos + " - " + zPos;
             spawnedObstacle.transform.position = new Vector3(xPos, 1, zPos);
-
-            //floatHP = ObstacleObject.hp / 10;
-            //spawnedObstacle.GetComponent<Renderer>().material.SetFloat("FloatHP", 0.5f);
         }
         else
         {
-            //randomFoodPrefab = Random.Range(0, 4);
             foodPrefab.GetComponent<ObstacleObject>().hp = Random.Range(1, 5);
             spawnedObstacle = Instantiate(foodPrefab, transform);
-            //spawnedObstacle = Instantiate(FoodPrefabs[randomFoodPrefab], transform);
             spawnedObstacle.name = "Food " + xPos + " - " + zPos;
             spawnedObstacle.transform.position = new Vector3(xPos, 1, zPos);
         }

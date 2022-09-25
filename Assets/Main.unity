@@ -1127,27 +1127,9 @@ MonoBehaviour:
   foodPrefab: {fileID: 8259404009581060408, guid: 9de683eee91a6e04abd35724b37eee5f, type: 3}
   blockPrefab: {fileID: 5254339223413235825, guid: 18c6552030e7570459c02841fa16932e, type: 3}
   wallPrefab: {fileID: 3998973376976178254, guid: 4a074185e85169d478f28e6a0c33871a, type: 3}
-  naturePrefab: {fileID: 0}
   finishPrefab: {fileID: 9094682405226038413, guid: 7ab54dcb73486cf4f8caf2074b532e1b, type: 3}
   resourceHolder: {fileID: 403089898}
   wallHolder: {fileID: 1438954152}
-  BlockPrefabs:
-  - {fileID: 1239477144589692456, guid: b42eab9b752edd94eb35121817399e7f, type: 3}
-  - {fileID: 1139209800955112731, guid: 3c9ae6161aaf6ba47aa5a178b0a1f827, type: 3}
-  - {fileID: 4589771726619998639, guid: f30c756a657075a4987145471ef6daf0, type: 3}
-  - {fileID: 1672101459754181810, guid: 56cfd247aa3830b49949b25bc3caba36, type: 3}
-  - {fileID: 6507170805682646097, guid: bfc58f2a6926ca84ab16a28429945c65, type: 3}
-  - {fileID: 4246172912219766724, guid: c59597bf3a7bef54f8d9d045ab66c343, type: 3}
-  - {fileID: 6576132602670442091, guid: a3a415d6a1799074e98cae897658e709, type: 3}
-  - {fileID: 956271194983836143, guid: b2b0daf9751ea6444b662521a166cefe, type: 3}
-  - {fileID: 8076213038143920291, guid: 0ec4b214b66b14f4c843409a9245d0f3, type: 3}
-  - {fileID: 6106872917478373454, guid: ba9836fc16cbe0c41b9c7faeea8bda32, type: 3}
-  FoodPrefabs:
-  - {fileID: 1675032081707610472, guid: 26653eec977787a40a20707cd9fe136f, type: 3}
-  - {fileID: 4067675025702077793, guid: df45b6fbeedd1a8479dde5b011add221, type: 3}
-  - {fileID: 7081825069471915555, guid: 40e4509f460bbf0488e52df2c25d4403, type: 3}
-  - {fileID: 9126662194813725067, guid: 4844686dd57148f44a353256ab97cb7a, type: 3}
-  - {fileID: 5314826881451335619, guid: f9d4093c10ae81a45ab7b63d7f942d73, type: 3}
   NaturePrefabs:
   - {fileID: 1493958779012120596, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
   - {fileID: 4263922822445002727, guid: 3cdafb3c2f54d434894928d72d282874, type: 3}
@@ -1172,16 +1154,15 @@ MonoBehaviour:
   - {fileID: 6941765000743290380, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
   - {fileID: 2807449429036958551, guid: f0c16f0ea935ea64297ca1d4d55d9746, type: 3}
   - {fileID: 9069115365609291303, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
-  WallPrefabs: []
   SnakeMovement: {fileID: 243540403}
   Game: {fileID: 243540411}
-  floatHP: 0
   obstacleChance: 0.3
   foodChance: 0.2
   obstacleNature: 0.3
   wallChance: 0.3
   finishZ: 0
   LevelLong: 0
+  blockHP: 0
 --- !u!4 &609386013
 Transform:
   m_ObjectHideFlags: 0
@@ -1408,6 +1389,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756580069}
   m_CullTransparentMesh: 1
+--- !u!1 &807030308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807030309}
+  m_Layer: 0
+  m_Name: Block
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &807030309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807030308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.14778459, y: 1.1957622, z: 6.1175866}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &879755557
 GameObject:
   m_ObjectHideFlags: 0

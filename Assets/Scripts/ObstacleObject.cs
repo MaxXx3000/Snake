@@ -11,6 +11,9 @@ public class ObstacleObject : MonoBehaviour
     public SnakeMovement SnakeMovement;
     public TextMeshPro _text;
     public int hp;
+    public float floatHP;
+    public float hpf;
+    public float hpMax = 10f;
 
     public enum ObststacleType
     {
@@ -22,9 +25,8 @@ public class ObstacleObject : MonoBehaviour
     private void Awake()
     {
         _text.text = hp.ToString();
-    }
-    private void Update()
-    {
-        
+        hpf = hp;
+        floatHP = hpf / hpMax;
+        GetComponent<Renderer>().material.SetFloat("_FloatHP", floatHP);
     }
 }
