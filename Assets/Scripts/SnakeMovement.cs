@@ -13,6 +13,7 @@ public class SnakeMovement : MonoBehaviour
     public int Length;
     public GameManager GameManager;
     public Game Game;
+    public SnakeTail SnakeTail;
     public ObstacleObject ObstacleObject;
 
     public TextMeshPro PointsText;
@@ -32,6 +33,9 @@ public class SnakeMovement : MonoBehaviour
     public Player Player;
 
     public Rigidbody Rigidbody;
+
+    public int damage = 0;
+    public int grow = 0;
 
     private void Awake()
     {
@@ -87,23 +91,31 @@ public class SnakeMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Food")
         {
+            grow = collision.gameObject.GetComponent<ObstacleObject>().hp;
             Debug.Log("Food");
             foodCrush.Play();
             Destroy(collision.gameObject);
-            Length++;
-            CurrentScore++;
+            Length += grow;
+            CurrentScore += grow;
             componentSnakeTail.AddCircle();
             PointsText.SetText(Length.ToString());
         }
         else if (collision.gameObject.tag == "Block")
         {
-            //int damage = TryGetComponent<ObstacleObject.HP>(gameObject);
+            damage = collision.gameObject.GetComponent<ObstacleObject>().hp;
             stone.Play();
             stoneCrush.Play();
             Debug.Log("Block");
-            Object.Destroy(collision.gameObject, 0.3f);
-            Length -= ObstacleObject.HP;
-            componentSnakeTail.RemoveCircle();
+            if(damage > 0)
+            {
+                Invoke("RemoveCircle()", 0.5f);
+            }
+            else
+            {
+                Destroy(collision.gameObject, 0.3f);
+            }
+            Destroy(collision.gameObject, 0.3f);
+            Length -= damage;
             PointsText.SetText(Length.ToString());
             if(Length < 1)
             {

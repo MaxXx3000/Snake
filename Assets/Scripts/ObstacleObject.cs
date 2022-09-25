@@ -8,8 +8,9 @@ using UnityEngine.Tilemaps;
 public class ObstacleObject : MonoBehaviour
 {
     public ObststacleType obstacleType;
+    public SnakeMovement SnakeMovement;
     public TextMeshPro _text;
-    public int HP;
+    public int hp;
 
     public enum ObststacleType
     {
@@ -20,7 +21,7 @@ public class ObstacleObject : MonoBehaviour
 
     private void Awake()
     {
-        _text.text = HP.ToString();
-        //GetComponent<Renderer>().material.SetFloat("FloatHP", (HP / 10));
+        _text.text = hp.ToString();
+        //gameObject.GetComponent<Renderer>().material.SetFloat("FloatHP", (hp / 10));
     }
 }
