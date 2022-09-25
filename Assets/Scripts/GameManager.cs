@@ -176,18 +176,18 @@ public class GameManager : MonoBehaviour
                 randomBlockPrefab = Random.Range(5, 9);
             }
             
-            GameObject block = Instantiate(BlockPrefabs[randomBlockPrefab], transform);
-            spawnedObstacle = Instantiate(block);
+            //GameObject block = Instantiate(BlockPrefabs[randomBlockPrefab], transform);
+            spawnedObstacle = Instantiate(BlockPrefabs[randomBlockPrefab], transform);
             spawnedObstacle.name = "Block " + xPos + " - " + zPos;
             spawnedObstacle.transform.position = new Vector3(xPos, 1, zPos);
         }
         else
         {
             randomFoodPrefab = Random.Range(0, 4);
-            GameObject food = Instantiate(FoodPrefabs[randomFoodPrefab], transform);
-            spawnedObstacle = Instantiate(food);
+            //GameObject food = Instantiate(FoodPrefabs[randomFoodPrefab], transform);
+            spawnedObstacle = Instantiate(FoodPrefabs[randomFoodPrefab], transform);
             spawnedObstacle.name = "Food " + xPos + " - " + zPos;
-            spawnedObstacle.transform.position = new Vector3(xPos, 0.5f, zPos);
+            spawnedObstacle.transform.position = new Vector3(xPos, 1, zPos);
         }
 
         spawnedObstacle.transform.SetParent(resourceHolder);
@@ -209,8 +209,8 @@ public class GameManager : MonoBehaviour
         GameObject sawnedNature = null;
 
         randomNaturePrefab = Random.Range(0, 22);
-        GameObject nature = Instantiate(NaturePrefabs[randomNaturePrefab], transform);
-        sawnedNature = Instantiate(nature);
+        //GameObject nature = Instantiate(NaturePrefabs[randomNaturePrefab], transform);
+        sawnedNature = Instantiate(NaturePrefabs[randomNaturePrefab], transform);
         sawnedNature.name = "Nature " + xNature + " - " + zNature;
         sawnedNature.transform.position = new Vector3(xNature, 1.5f, zNature);
         sawnedNature.transform.SetParent(natureHolder);

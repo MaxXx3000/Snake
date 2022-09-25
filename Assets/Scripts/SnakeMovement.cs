@@ -32,8 +32,12 @@ public class SnakeMovement : MonoBehaviour
 
     public Rigidbody Rigidbody;
 
-    private void Start()
+    private void Awake()
     {
+        sidewaysSpeed = 0;
+    }
+    private void Start()
+    {        
         mainCamera = Camera.main;
         componentRigidbody = GetComponent<Rigidbody>();
         componentSnakeTail = GetComponent<SnakeTail>();
