@@ -186,10 +186,11 @@ public class GameManager : MonoBehaviour
             //spawnedObstacle = Instantiate(BlockPrefabs[randomBlockPrefab], transform);
             
             spawnedObstacle = Instantiate(blockPrefab, transform);
-            floatHP = ObstacleObject.hp / 10;
-            spawnedObstacle.GetComponent<Renderer>().material.SetFloat("FloatHP", floatHP);
             spawnedObstacle.name = "Block " + xPos + " - " + zPos;
             spawnedObstacle.transform.position = new Vector3(xPos, 1, zPos);
+
+            //floatHP = ObstacleObject.hp / 10;
+            //spawnedObstacle.GetComponent<Renderer>().material.SetFloat("FloatHP", 0.5f);
         }
         else
         {
@@ -202,6 +203,7 @@ public class GameManager : MonoBehaviour
         }
 
         spawnedObstacle.transform.SetParent(resourceHolder);
+
     }
     
     public void SpawnWall(float xPos, float zPos)

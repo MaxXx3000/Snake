@@ -346,6 +346,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnakeHead: {fileID: 1694002348}
   CircleDiameter: 0.25
+  SnakeMovement: {fileID: 243540403}
+  ObstacleObject: {fileID: 1964702452414710273, guid: 18c6552030e7570459c02841fa16932e, type: 3}
 --- !u!114 &243540403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +364,7 @@ MonoBehaviour:
   Length: 2
   GameManager: {fileID: 609386012}
   Game: {fileID: 243540411}
+  SnakeTail: {fileID: 243540402}
   ObstacleObject: {fileID: 1964702452414710273, guid: 18c6552030e7570459c02841fa16932e, type: 3}
   PointsText: {fileID: 1277017681}
   stone: {fileID: 465306237}
@@ -372,6 +375,7 @@ MonoBehaviour:
   Player: {fileID: 243540410}
   Rigidbody: {fileID: 243540405}
   damage: 0
+  grow: 0
   CurrentScore: 0
 --- !u!54 &243540405
 Rigidbody:
@@ -1171,7 +1175,7 @@ MonoBehaviour:
   WallPrefabs: []
   SnakeMovement: {fileID: 243540403}
   Game: {fileID: 243540411}
-  FloatHP: 0
+  floatHP: 0
   obstacleChance: 0.3
   foodChance: 0.2
   obstacleNature: 0.3

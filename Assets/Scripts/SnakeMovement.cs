@@ -60,7 +60,7 @@ public class SnakeMovement : MonoBehaviour
                 ForwardSpeed = 2;
             }
         }
-        for (int i = 0; i < Length; i++) componentSnakeTail.AddCircle();
+        for (int i = 0; i < Length; i++) componentSnakeTail.AddStartCircle();
 
         PointsText.SetText(Length.ToString());        
     }
@@ -106,22 +106,19 @@ public class SnakeMovement : MonoBehaviour
             stone.Play();
             stoneCrush.Play();
             Debug.Log("Block");
-            if(damage > 0)
-            {
-                Invoke("RemoveCircle()", 0.5f);
-            }
-            else
-            {
-                Destroy(collision.gameObject, 0.3f);
-            }
-            Destroy(collision.gameObject, 0.3f);
-            Length -= damage;
+            Length -= damage;                        
             PointsText.SetText(Length.ToString());
             if(Length < 1)
             {
                 Rigidbody.velocity = Vector3.zero;
                 Player.Die();
             }
+            else
+            {
+                componentSnakeTail.RemoveCircle();
+                Destroy(collision.gameObject, 0.3f);
+            }
+
         }
         else if (collision.gameObject.tag == "Finish")
         {

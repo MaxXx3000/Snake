@@ -22,6 +22,9 @@ public class ObstacleObject : MonoBehaviour
     private void Awake()
     {
         _text.text = hp.ToString();
-        //gameObject.GetComponent<Renderer>().material.SetFloat("FloatHP", (hp / 10));
+    }
+    private void Update()
+    {
+        
     }
 }

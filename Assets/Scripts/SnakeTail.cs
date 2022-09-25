@@ -6,6 +6,9 @@ public class SnakeTail : MonoBehaviour
     public Transform SnakeHead;
     public float CircleDiameter;
 
+    public SnakeMovement SnakeMovement;
+    public ObstacleObject ObstacleObject;
+
     private List<Transform> snakeCircles = new List<Transform>();
     private List<Vector3> positions = new List<Vector3>();
 
@@ -34,18 +37,31 @@ public class SnakeTail : MonoBehaviour
             snakeCircles[i].position = Vector3.Lerp(positions[i + 1], positions[i], distance / CircleDiameter);
         }
     }
-
-    public void AddCircle()
+    public void AddStartCircle()
     {
         Transform circle = Instantiate(SnakeHead, positions[positions.Count - 1], Quaternion.identity, transform);
         snakeCircles.Add(circle);
         positions.Add(circle.position);
     }
+    public void AddCircle()
+    {
+        for (int i = 0; i < SnakeMovement.grow; i++)
+        {
+            Transform circle = Instantiate(SnakeHead, positions[positions.Count - 1], Quaternion.identity, transform);
+            snakeCircles.Add(circle);
+            positions.Add(circle.position);
+        }
+            
+    }
 
     public void RemoveCircle()
     {
-        Destroy(snakeCircles[0].gameObject);
-        snakeCircles.RemoveAt(0);
-        positions.RemoveAt(1);
+        for (int i = SnakeMovement.damage; i > 0; i--)
+        {
+            Destroy(snakeCircles[0].gameObject);
+            snakeCircles.RemoveAt(0);
+            positions.RemoveAt(1);
+        }
+                    
     }
 }
