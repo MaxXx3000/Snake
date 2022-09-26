@@ -4,6 +4,7 @@ using UnityEngine;
 public class SnakeTail : MonoBehaviour
 {
     public Transform SnakeHead;
+    public Transform SnakePart;
     public float CircleDiameter;
 
     public SnakeMovement SnakeMovement;
@@ -39,7 +40,7 @@ public class SnakeTail : MonoBehaviour
     }
     public void AddStartCircle()
     {
-        Transform circle = Instantiate(SnakeHead, positions[positions.Count - 1], Quaternion.identity, transform);
+        Transform circle = Instantiate(SnakePart, positions[positions.Count - 1], Quaternion.identity, transform);
         snakeCircles.Add(circle);
         positions.Add(circle.position);
     }
@@ -47,7 +48,7 @@ public class SnakeTail : MonoBehaviour
     {
         for (int i = 0; i < SnakeMovement.grow; i++)
         {
-            Transform circle = Instantiate(SnakeHead, positions[positions.Count - 1], Quaternion.identity, transform);
+            Transform circle = Instantiate(SnakePart, positions[positions.Count - 1], Quaternion.identity, transform);
             snakeCircles.Add(circle);
             positions.Add(circle.position);
         }
@@ -56,12 +57,8 @@ public class SnakeTail : MonoBehaviour
 
     public void RemoveCircle()
     {
-        for (int i = SnakeMovement.damage; i > 0; i--)
-        {
-            Destroy(snakeCircles[0].gameObject);
-            snakeCircles.RemoveAt(0);
-            positions.RemoveAt(1);
-        }
-                    
+        Destroy(snakeCircles[0].gameObject);
+        snakeCircles.RemoveAt(0);
+        positions.RemoveAt(1);
     }
 }

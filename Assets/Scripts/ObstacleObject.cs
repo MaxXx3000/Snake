@@ -30,4 +30,14 @@ public class ObstacleObject : MonoBehaviour
         floatHP = hpf / hpMax;
         GetComponent<Renderer>().material.SetFloat("_FloatHP", floatHP);
     }
+
+    public void ChangeBlock()
+    {
+        hp--;
+        _text.text = hp.ToString();        
+        hpf = hp;
+        floatHP = hpf / hpMax;
+        Debug.Log("floatHP" + floatHP);
+        //SnakeMovement.currentBlock.GetComponent<Renderer>().material.SetFloat("_FloatHP", floatHP);
+    }
 }

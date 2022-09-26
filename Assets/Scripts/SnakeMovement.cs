@@ -29,24 +29,27 @@ public class SnakeMovement : MonoBehaviour
     private float sidewaysSpeed;
 
     public Text TextScore;
-    public SnakeMovement CurrentBlock;
     public Player Player;
 
     public Rigidbody Rigidbody;
+    public GameObject currentBlock;
+    public int currentBlockhp;
 
     public int damage = 0;
     public int grow = 0;
+    int i = 0;
 
     private void Awake()
     {
         sidewaysSpeed = 0;
     }
     private void Start()
-    {        
+    {
+        
         mainCamera = Camera.main;
         componentRigidbody = GetComponent<Rigidbody>();
         componentSnakeTail = GetComponent<SnakeTail>();
-        if(Game.LevelIndex == 1)
+        if (Game.LevelIndex == 1)
         {
             Length = 1;
             ForwardSpeed = 2;
@@ -92,7 +95,7 @@ public class SnakeMovement : MonoBehaviour
         if (collision.gameObject.tag == "Food")
         {
             grow = collision.gameObject.GetComponent<ObstacleObject>().hp;
-            Debug.Log("Food");
+            //Debug.Log("Food");
             foodCrush.Play();
             Destroy(collision.gameObject);
             Length += grow;
@@ -102,29 +105,45 @@ public class SnakeMovement : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Block")
         {
+            currentBlock = collision.gameObject;
             damage = collision.gameObject.GetComponent<ObstacleObject>().hp;
+            ObstacleObject.hp = damage;
             stone.Play();
             stoneCrush.Play();
-            Debug.Log("Block");
-            Length -= damage;                        
-            PointsText.SetText(Length.ToString());
-            if(Length < 1)
+            //Debug.Log("Block");
+            for(i =0; i < damage; i++)
             {
-                Rigidbody.velocity = Vector3.zero;
-                Player.Die();
+                Invoke("Damage", 0.2f);                
             }
-            else
-            {
-                componentSnakeTail.RemoveCircle();
-                Destroy(collision.gameObject, 0.3f);
-            }
-
         }
         else if (collision.gameObject.tag == "Finish")
         {
             Player.ReachFinish();
         }        
     }
+
+    public void Damage()
+    {
+        //currentBlockhp--;
+        //Debug.Log("currentBlockhp" + currentBlockhp);
+        ObstacleObject.ChangeBlock();
+        currentBlock.gameObject.GetComponent<ObstacleObject>().hp--;
+        Debug.Log("hp" + currentBlock.gameObject.GetComponent<ObstacleObject>().hp);
+        Length--;
+        PointsText.SetText(Length.ToString());
+        if (Length < 1)
+        {
+            Rigidbody.velocity = Vector3.zero;
+            Player.Die();
+        }
+
+        componentSnakeTail.RemoveCircle();
+        if (i == damage)
+        {
+            Destroy(currentBlock);
+        }
+    }
+
     private void FixedUpdate()
     {
         if (Mathf.Abs(sidewaysSpeed) > 4) sidewaysSpeed = 4 * Mathf.Sign(sidewaysSpeed);

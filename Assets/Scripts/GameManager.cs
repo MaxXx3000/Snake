@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
     {
         CreatLevel();
         GameObject tmpTile = Instantiate(finishPrefab);
-        tmpTile.transform.position = new Vector3(0, 1, LevelLength - 1);
+        tmpTile.transform.position = new Vector3(-0.5f, 1, LevelLength - 1);
         finishZ = tmpTile.transform.position.z;
         TextLevel.text = "Level " + (Game.LevelIndex).ToString();
         TextBestScore.text = "Best Score " + (Game.BestScore).ToString();
