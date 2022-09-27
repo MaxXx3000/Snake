@@ -136,16 +136,15 @@ public class SnakeMovement : MonoBehaviour
             stoneCrush.Play();
             PointsText.SetText(Length.ToString());
             timer = 0;
+            if (ObstacleObject.floatHP > 0)
+            {
+                currentBlock.GetComponent<Renderer>().material.SetFloat("_FloatHP", ObstacleObject.floatHP);
+            }
         }
         else
         {
             Rigidbody.velocity = Vector3.zero;
             Player.Die();
-        }
-
-        if (ObstacleObject.floatHP > 1)
-        {
-            currentBlock.GetComponent<Renderer>().material.SetFloat("_FloatHP", ObstacleObject.floatHP);
         }
 
         if (ObstacleObject.hp == 1)
