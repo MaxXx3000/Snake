@@ -10,6 +10,7 @@ public class ObstacleObject : MonoBehaviour
     public ObststacleType obstacleType;
     public SnakeMovement SnakeMovement;
     public TextMeshPro _text;
+    public TextMeshPro _textDamage;
     public int hp;
     public float floatHP;
     public float hpf;
@@ -32,12 +33,8 @@ public class ObstacleObject : MonoBehaviour
     }
 
     public void ChangeBlock()
-    {
-        hp--;
-        _text.text = hp.ToString();        
-        hpf = hp;
-        floatHP = hpf / hpMax;
-        Debug.Log("floatHP" + floatHP);
-        //SnakeMovement.currentBlock.GetComponent<Renderer>().material.SetFloat("_FloatHP", floatHP);
+    {       
+        hpf = hp;        
+        floatHP = hpf / hpMax;        
     }
 }

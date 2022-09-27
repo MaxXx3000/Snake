@@ -38,6 +38,7 @@ public class SnakeMovement : MonoBehaviour
     public int damage = 0;
     public int grow = 0;
     int i = 0;
+    private float timer;
 
     private void Awake()
     {
@@ -90,7 +91,7 @@ public class SnakeMovement : MonoBehaviour
     }
 
     public int CurrentScore;
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.tag == "Food")
         {
@@ -107,13 +108,12 @@ public class SnakeMovement : MonoBehaviour
         {
             currentBlock = collision.gameObject;
             damage = collision.gameObject.GetComponent<ObstacleObject>().hp;
-            ObstacleObject.hp = damage;
-            stone.Play();
-            stoneCrush.Play();
+            ObstacleObject.hp = damage;            
             //Debug.Log("Block");
-            for(i =0; i < damage; i++)
+            timer += Time.deltaTime;
+            if(timer > 0.05f)
             {
-                Invoke("Damage", 0.2f);                
+                Damage();
             }
         }
         else if (collision.gameObject.tag == "Finish")
@@ -124,13 +124,19 @@ public class SnakeMovement : MonoBehaviour
 
     public void Damage()
     {
-        //currentBlockhp--;
-        //Debug.Log("currentBlockhp" + currentBlockhp);
         ObstacleObject.ChangeBlock();
         currentBlock.gameObject.GetComponent<ObstacleObject>().hp--;
-        Debug.Log("hp" + currentBlock.gameObject.GetComponent<ObstacleObject>().hp);
         Length--;
+        ObstacleObject.hp--;
+        currentBlock.GetComponent<ObstacleObject>()._text.text = ObstacleObject.hp.ToString();
+        stone.Play();
+        stoneCrush.Play();
         PointsText.SetText(Length.ToString());
+        timer = 0;
+        if (ObstacleObject.floatHP > 0)
+        {
+            currentBlock.GetComponent<Renderer>().material.SetFloat("_FloatHP", ObstacleObject.floatHP);
+        }
         if (Length < 1)
         {
             Rigidbody.velocity = Vector3.zero;

@@ -215,6 +215,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1964702452414710273, guid: 18c6552030e7570459c02841fa16932e, type: 3}
+      propertyPath: _textDamage
+      value: 
+      objectReference: {fileID: 1630002050}
+    - target: {fileID: 1964702452414710273, guid: 18c6552030e7570459c02841fa16932e, type: 3}
       propertyPath: SnakeMovement
       value: 
       objectReference: {fileID: 243540403}
@@ -1221,7 +1225,7 @@ MonoBehaviour:
   TextMaxLevel: {fileID: 756580071}
   TextScore: {fileID: 1973641810}
   tilePrefad: {fileID: 3577977859302109685, guid: e9a7b23a13af1764c85e44bcc5eb2a29, type: 3}
-  LevelWidth: 8
+  LevelWidth: 6
   LevelLength: 50
   tileHolder: {fileID: 375646120}
   natureHolder: {fileID: 581643415}
@@ -12280,6 +12284,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595302453}
   m_CullTransparentMesh: 1
+--- !u!114 &1630002050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4264452250345048990, guid: 18c6552030e7570459c02841fa16932e, type: 3}
+  m_PrefabInstance: {fileID: 3369014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1694002342
 GameObject:
   m_ObjectHideFlags: 0
