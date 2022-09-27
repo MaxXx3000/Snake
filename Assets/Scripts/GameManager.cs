@@ -122,7 +122,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (SnakeMovement.Length > 50)
                     {
-                        foodChance = 0.05f;
+                        foodChance = 0.1f;
                     }
 
                     bool spawnObstacle = Random.value <= foodChance;

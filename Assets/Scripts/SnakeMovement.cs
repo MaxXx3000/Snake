@@ -111,7 +111,8 @@ public class SnakeMovement : MonoBehaviour
             ObstacleObject.hp = damage;            
             //Debug.Log("Block");
             timer += Time.deltaTime;
-            if(timer > 0.05f)
+            
+            if (timer > 0.1f)
             {
                 Damage();
             }
@@ -124,27 +125,30 @@ public class SnakeMovement : MonoBehaviour
 
     public void Damage()
     {
-        ObstacleObject.ChangeBlock();
-        currentBlock.gameObject.GetComponent<ObstacleObject>().hp--;
-        Length--;
-        ObstacleObject.hp--;
-        currentBlock.GetComponent<ObstacleObject>()._text.text = ObstacleObject.hp.ToString();
-        stone.Play();
-        stoneCrush.Play();
-        PointsText.SetText(Length.ToString());
-        timer = 0;
-        if (ObstacleObject.floatHP > 0)
+        if (Length > 0)
         {
-            currentBlock.GetComponent<Renderer>().material.SetFloat("_FloatHP", ObstacleObject.floatHP);
+            ObstacleObject.ChangeBlock();
+            currentBlock.gameObject.GetComponent<ObstacleObject>().hp--;
+            Length--;
+            componentSnakeTail.RemoveCircle();
+            currentBlock.GetComponent<ObstacleObject>()._text.text = ObstacleObject.hp.ToString();
+            stone.Play();
+            stoneCrush.Play();
+            PointsText.SetText(Length.ToString());
+            timer = 0;
         }
-        if (Length < 1)
+        else
         {
             Rigidbody.velocity = Vector3.zero;
             Player.Die();
         }
 
-        componentSnakeTail.RemoveCircle();
-        if (i == damage)
+        if (ObstacleObject.floatHP > 1)
+        {
+            currentBlock.GetComponent<Renderer>().material.SetFloat("_FloatHP", ObstacleObject.floatHP);
+        }
+
+        if (ObstacleObject.hp == 1)
         {
             Destroy(currentBlock);
         }
