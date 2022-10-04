@@ -52,7 +52,7 @@ public class SnakeMovement : MonoBehaviour
         componentSnakeTail = GetComponent<SnakeTail>();
         if (Game.LevelIndex == 1)
         {
-            Length = 1;
+            Length = 4;
             ForwardSpeed = 2;
         }
         else
@@ -141,13 +141,13 @@ public class SnakeMovement : MonoBehaviour
                 currentBlock.GetComponent<Renderer>().material.SetFloat("_FloatHP", ObstacleObject.floatHP);
             }
         }
-        else
+        else if (Length < 1)
         {
             Rigidbody.velocity = Vector3.zero;
             Player.Die();
         }
 
-        if (ObstacleObject.hp == 1)
+        if (ObstacleObject.hp == 0)
         {
             Destroy(currentBlock);
         }
