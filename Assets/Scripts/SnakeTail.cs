@@ -8,6 +8,7 @@ public class SnakeTail : MonoBehaviour
     public float CircleDiameter;
 
     public SnakeMovement SnakeMovement;
+    public Player Player;
     public ObstacleObject ObstacleObject;
 
     private List<Transform> snakeCircles = new List<Transform>();

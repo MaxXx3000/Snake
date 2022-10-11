@@ -12,8 +12,10 @@ public class Player : MonoBehaviour
 
     public SnakeMovement SnakeMovement;
     public Game Game;
+
     public void ReachFinish()
     {
+        //Invoke("Game.OnPlayerReachedFinish", 1);
         Game.OnPlayerReachedFinish();
         Rigidbody.velocity = Vector3.zero;
         //effectFinish.Play();
@@ -22,6 +24,7 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
+        //Invoke("Game.OnPlayerDied", 1);
         Game.OnPlayerDied();
         Rigidbody.velocity = Vector3.zero;
         //effectDie.Play();
