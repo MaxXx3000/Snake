@@ -881,7 +881,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU LOOSE!
+  m_Text: YOU LOSE!
 --- !u!222 &243621225
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -907,7 +907,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1080,7 +1080,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1824,6 +1824,20 @@ MonoBehaviour:
   - {fileID: 6941765000743290380, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
   - {fileID: 2807449429036958551, guid: f0c16f0ea935ea64297ca1d4d55d9746, type: 3}
   - {fileID: 9069115365609291303, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
+  FencePrefabs:
+  - {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
+  - {fileID: 134746, guid: d4f06407f06d8cf41b643015132cafca, type: 3}
+  - {fileID: 159046, guid: b10237067370545479ead9bdac817d9c, type: 3}
+  - {fileID: 151484, guid: c107d6218da3747479b38075e3042255, type: 3}
+  - {fileID: 111856, guid: ab5e0beb1c36778479983f28b65d97dd, type: 3}
+  - {fileID: 121720, guid: ee17d9afd26027744b8c7d0cc0f25022, type: 3}
+  - {fileID: 109708, guid: 49e86d56904ce434e84ead31c131cfbc, type: 3}
+  - {fileID: 149186, guid: 6c7e01809ee343847a660faeaa78d718, type: 3}
+  - {fileID: 102524, guid: da8e893168526164591f81d60c0e06b1, type: 3}
+  - {fileID: 174944, guid: 6bea119038cba374387862a060db5358, type: 3}
+  - {fileID: 136604, guid: a14aa485a8d4afa46a5e7e72b745ad92, type: 3}
+  - {fileID: 187280, guid: ac1f0ef7b8bec92458549c915b3114b7, type: 3}
+  - {fileID: 148714, guid: 2d525f55a99e5bd4e98aec363e675a60, type: 3}
   SnakeMovement: {fileID: 243540403}
   Game: {fileID: 243540411}
   obstacleChance: 0.3
@@ -2410,14 +2424,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -0.5, y: 12, z: 0}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: -0.5, y: 8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2431,7 +2445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 243540407}
-  otstavanie: 6
+  otstavanie: 5
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13453,7 +13467,7 @@ GameObject:
   - component: {fileID: 1978591226}
   - component: {fileID: 1978591231}
   m_Layer: 5
-  m_Name: LoosePanal
+  m_Name: LosePanal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -120,6 +120,7 @@ MonoBehaviour:
   obstacleType: 1
   SnakeMovement: {fileID: 0}
   _text: {fileID: 4264452250345048990}
+  _textDamage: {fileID: 0}
   hp: 0
   floatHP: 0
   hpf: 0
@@ -188,7 +189,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
