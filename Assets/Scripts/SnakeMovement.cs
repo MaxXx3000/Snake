@@ -89,14 +89,6 @@ public class SnakeMovement : MonoBehaviour
         }
         GameManager.TextScore.text = "Score " + (Game.Score + CurrentScore).ToString();
 
-        if (Length == 0)
-        {
-            Rigidbody.velocity = Vector3.zero;
-            Game.looseObject.gameObject.SetActive(true);
-            Time.timeScale = 0f;
-            //Player.Die();
-        }
-
     }
 
     public int CurrentScore;
@@ -150,8 +142,16 @@ public class SnakeMovement : MonoBehaviour
                 currentBlock.GetComponent<Renderer>().material.SetFloat("_FloatHP", ObstacleObject.floatHP);
             }
         }
-        
-        if (ObstacleObject.hp == 0)
+
+        if (Length < 1)
+        {
+            Rigidbody.velocity = Vector3.zero;
+            Game.looseObject.gameObject.SetActive(true);
+            Time.timeScale = 0f;
+            //Player.Die();
+        }
+
+        if (ObstacleObject.hp == 1)
         {
             Destroy(currentBlock);
         }
