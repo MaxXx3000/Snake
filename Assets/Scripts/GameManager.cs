@@ -142,7 +142,7 @@ public class GameManager : MonoBehaviour
                     }
                 }
                 //Создание стен
-                if (z > 5 && z < LevelLength - 5 || x!= LevelWidth / 2 - 1)
+                if (z > 5 && z < LevelLength - 5 && x!= LevelWidth / 2 - 1)
                 {
                     bool spawnWall = Random.value <= wallChance;
                     if (spawnWall)
