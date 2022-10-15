@@ -1787,7 +1787,9 @@ MonoBehaviour:
   TextBestScore: {fileID: 161047506}
   TextMaxLevel: {fileID: 756580071}
   TextScore: {fileID: 1973641810}
-  tilePrefad: {fileID: 3577977859302109685, guid: e9a7b23a13af1764c85e44bcc5eb2a29, type: 3}
+  tileNaturePrefad: {fileID: 1272245567721168938, guid: 4cd09e93ef8cd5340bab70dad5267bba, type: 3}
+  tileDesertPrefad: {fileID: 8907394499361581919, guid: 184bde2fcc73a3440a152c5c84f9839a, type: 3}
+  tileSnowPrefad: {fileID: 8474535739760331001, guid: 0cbea629e92479e48b7f7e7a444c80ee, type: 3}
   LevelWidth: 6
   LevelLength: 50
   tileHolder: {fileID: 375646120}
@@ -1824,6 +1826,36 @@ MonoBehaviour:
   - {fileID: 6941765000743290380, guid: c60edd51c065ceb46b345849a03bc106, type: 3}
   - {fileID: 2807449429036958551, guid: f0c16f0ea935ea64297ca1d4d55d9746, type: 3}
   - {fileID: 9069115365609291303, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
+  DesertPrefabs:
+  - {fileID: 145196, guid: 8a13b3dbbf597744192ac4a84ebb93c6, type: 3}
+  - {fileID: 1920272553093660, guid: ce4192f2b3cb01b4ea33251fa9ea76ed, type: 3}
+  - {fileID: 108226, guid: 575780dd1f55b7941803be0767c1e36e, type: 3}
+  - {fileID: 1485378158726796, guid: 5da07da6c25a65249aa4f03d5ed92684, type: 3}
+  - {fileID: 105562, guid: 65da5bb2d6e288b41baa018d8fec58f3, type: 3}
+  - {fileID: 1268516079989756, guid: 5c243d3591422814a81656730b54873b, type: 3}
+  - {fileID: 114448, guid: 50294217694c1a145a9a3b86f853c022, type: 3}
+  - {fileID: 1753111941425576, guid: 628ca882a5b7c144799112fa3339945c, type: 3}
+  - {fileID: 128100, guid: 3e63f970932e56649b966445efd75396, type: 3}
+  - {fileID: 1058360439551292, guid: 285b9972cdfec2a41a57161bddbe78ef, type: 3}
+  - {fileID: 1471897887361602, guid: 8f281d16e094c6a4896e37696e49dea9, type: 3}
+  - {fileID: 132076, guid: e3a2b024936fe54498e16bf28bfd0e90, type: 3}
+  - {fileID: 136132, guid: 37d65ed67498b304ea4da8a6b7c2d9b4, type: 3}
+  - {fileID: 1455819010161008, guid: 86ca6560575669f47bb9427d4e937af0, type: 3}
+  - {fileID: 146236, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+  - {fileID: 118734, guid: a45f923de9555884cbe160883ce87a74, type: 3}
+  SnowPrefabs:
+  - {fileID: 5195130642784693445, guid: f5df276ca8db56049849b11899004d48, type: 3}
+  - {fileID: 6419690403333561955, guid: c00575bbb9efcd740b13a035ce795a13, type: 3}
+  - {fileID: 1395144512976339487, guid: 787481964fc05da4684124e8aaa924ee, type: 3}
+  - {fileID: 4830924554166701620, guid: 9cca81d8171e7e0459d94f8251680bfd, type: 3}
+  - {fileID: 5443298048240559771, guid: 6956dbfb44d2389469a0a8d9b83f3bc5, type: 3}
+  - {fileID: 3654120164719579372, guid: 221b274084495684db9bc9c630eb7155, type: 3}
+  - {fileID: 8872613431576690234, guid: 0f436f11e5f6a4746ad0ef93dc760583, type: 3}
+  - {fileID: 8692119028078779054, guid: 60276e840f2409647a7d366606f55005, type: 3}
+  - {fileID: 8124571273247579177, guid: cb2174d77e42ed74d8794609d80e4bbf, type: 3}
+  - {fileID: 5532667143784636804, guid: 4901a59201491854c8893f398c2d0c48, type: 3}
+  - {fileID: 9178047604103340251, guid: 0f407013ac6a8bc428a76e55593acf91, type: 3}
+  - {fileID: 3386118356341204270, guid: fda1b03ba40107b42aa57c49305b41f7, type: 3}
   FencePrefabs:
   - {fileID: 178996, guid: 4cc487e002327cb43995ca1871bd142e, type: 3}
   - {fileID: 134746, guid: d4f06407f06d8cf41b643015132cafca, type: 3}
@@ -1847,6 +1879,7 @@ MonoBehaviour:
   finishZ: 0
   LevelLong: 0
   blockHP: 0
+  randomBiome: 0
 --- !u!4 &609386013
 Transform:
   m_ObjectHideFlags: 0

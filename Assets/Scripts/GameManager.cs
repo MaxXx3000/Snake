@@ -18,7 +18,9 @@ public class GameManager : MonoBehaviour
     [Header("Builder")]
     [Space(10)]
 
-    public GameObject tilePrefad;
+    public GameObject tileNaturePrefad;
+    public GameObject tileDesertPrefad;
+    public GameObject tileSnowPrefad;
 
     public int LevelWidth;
     public int LevelLength;
@@ -41,6 +43,8 @@ public class GameManager : MonoBehaviour
     public Transform resourceHolder;
     public Transform wallHolder;
     public GameObject[] NaturePrefabs;
+    public GameObject[] DesertPrefabs;
+    public GameObject[] SnowPrefabs;
     public GameObject[] FencePrefabs;
     public SnakeMovement SnakeMovement;
     public Game Game;
@@ -49,6 +53,8 @@ public class GameManager : MonoBehaviour
     private int randomFoodPrefab;
     private int randomWallPrefab;
     private int randomNaturePrefab;
+    private int randomDesertPrefab;
+    private int randomSnowPrefab;
     private int randomFencePrefab;
 
     [Range(0, 1)]
@@ -60,9 +66,20 @@ public class GameManager : MonoBehaviour
     public float finishZ;
     public int LevelLong;
     public int blockHP;
+    public int randomBiome;
 
     private void Start()
     {
+        if(Game.LevelIndex == 1)
+        {
+            randomBiome = 0;
+        }
+        else
+        {
+            randomBiome = Random.Range(0, 2);
+            // 0 - зелень; 1 - пустыня; 2 - зима
+        }
+
         randomFencePrefab = Random.Range(0, 12);
         CreatLevel();
         GameObject tmpTile = Instantiate(finishPrefab);
@@ -104,7 +121,7 @@ public class GameManager : MonoBehaviour
                 {
                     int y = 0;
                     SpawnTile(x, y, z);
-                    TileObject spawnedTile = SpawnTile(x, y, z);
+                    //TileObject spawnedTile = SpawnTile(x, y, z);
                 }
 
                 if (x == -LevelWidth / 2 - 1 || x == LevelWidth / 2 - 1)
@@ -155,13 +172,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    TileObject SpawnTile(float xPos, float yPos, float zPos)
+    public void SpawnTile(float xPos, float yPos, float zPos)
     {
-        GameObject tmpTile = Instantiate(tilePrefad);
-        tmpTile.transform.position = new Vector3(xPos, yPos, zPos);
-        tmpTile.transform.SetParent(tileHolder);
-        tmpTile.name = "Tile " + xPos + " - " + zPos;
-        return tmpTile.GetComponent<TileObject>();
+        GameObject sawnedTile = null;
+        if (randomBiome == 0)
+        {
+            sawnedTile = Instantiate(tileNaturePrefad);
+        }
+        if (randomBiome == 1)
+        {
+            sawnedTile = Instantiate(tileDesertPrefad);
+        }
+        if (randomBiome == 2)
+        {
+            sawnedTile = Instantiate(tileSnowPrefad);
+        }
+
+        sawnedTile.name = "Tile " + xPos + " - " + zPos;
+        sawnedTile.transform.position = new Vector3(xPos, yPos, zPos);
+        sawnedTile.transform.SetParent(tileHolder);
     }
     public void SpawnObstacle(float xPos, float yPos, float zPos)
     {
@@ -223,12 +252,26 @@ public class GameManager : MonoBehaviour
     {
         GameObject sawnedNature = null;
         Vector3 rotate = transform.eulerAngles;
-        rotate.y = 0;
+        rotate.y = Random.Range(0, 360);
         transform.rotation = Quaternion.Euler(rotate);
-        randomNaturePrefab = Random.Range(0, 22);
-        sawnedNature = Instantiate(NaturePrefabs[randomNaturePrefab], transform);
+        if(randomBiome == 0)
+        {
+            randomNaturePrefab = Random.Range(0, 22);
+            sawnedNature = Instantiate(NaturePrefabs[randomNaturePrefab], transform);
+        }
+        if(randomBiome == 1)
+        {
+            randomDesertPrefab = Random.Range(0, 15);
+            sawnedNature = Instantiate(DesertPrefabs[randomDesertPrefab], transform);
+        }
+        if (randomBiome == 2)
+        {
+            randomSnowPrefab = Random.Range(0, 11);
+            sawnedNature = Instantiate(SnowPrefabs[randomSnowPrefab], transform);
+        }
+
         sawnedNature.name = "Nature " + xNature + " - " + zNature;
-        sawnedNature.transform.position = new Vector3(xNature, 0, zNature);
+        sawnedNature.transform.position = new Vector3(xNature, 0.5f, zNature);
         sawnedNature.transform.SetParent(natureHolder);
 
     }
