@@ -58,7 +58,8 @@ public class SnakeMovement : MonoBehaviour
         else
         {
             Length = Game.SnakeLenght;
-            ForwardSpeed = 1 + Game.LevelIndex / 2;
+            ForwardSpeed = 2 + ((Game.LevelIndex % 9) / 2);
+            Debug.Log("ForwardSpeed= " + ForwardSpeed);
         }
         for (int i = 0; i < Length; i++) componentSnakeTail.AddStartCircle();
 

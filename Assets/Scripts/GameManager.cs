@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public GameObject foodPrefab;
     public GameObject blockPrefab;
+    public GameObject snowBlockPrefab;
     public GameObject wallPrefab;
     public GameObject finishPrefab;
     public Transform resourceHolder;
@@ -76,12 +77,14 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            randomBiome = Random.Range(0, 2);
+            //randomBiome = Random.Range(0, 2);
             // 0 - зелень; 1 - пустыня; 2 - зима
+            randomBiome = Game.LevelIndex % 3;
         }
 
         randomFencePrefab = Random.Range(0, 12);
         CreatLevel();
+        EdgeLevel();
         GameObject tmpTile = Instantiate(finishPrefab);
         tmpTile.transform.position = new Vector3(-0.5f, 1, LevelLength - 1);
         finishZ = tmpTile.transform.position.z;
@@ -121,7 +124,6 @@ public class GameManager : MonoBehaviour
                 {
                     int y = 0;
                     SpawnTile(x, y, z);
-                    //TileObject spawnedTile = SpawnTile(x, y, z);
                 }
 
                 if (x == -LevelWidth / 2 - 1 || x == LevelWidth / 2 - 1)
@@ -172,6 +174,30 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void EdgeLevel()
+    {
+        for (int x = -LevelWidth / 2; x < LevelWidth / 2; x++)
+        {
+            int z = LevelLength;
+            SpawnEdgeWall(x, z);
+        }
+
+        for (int z = LevelLength; z < LevelLength + 20; z++)
+        {
+            for (int x = -LevelWidth * 2; x < LevelWidth * 2; x++)
+            {
+                int y = 0;
+                SpawnTile(x, y, z);
+                bool spawnNature = Random.value <= obstacleNature;
+                if (spawnNature)
+                {
+                    y = 2;
+                    SpawnNature(x, y, z);
+                }
+            }
+        }
+    }
+
     public void SpawnTile(float xPos, float yPos, float zPos)
     {
         GameObject sawnedTile = null;
@@ -192,6 +218,7 @@ public class GameManager : MonoBehaviour
         sawnedTile.transform.position = new Vector3(xPos, yPos, zPos);
         sawnedTile.transform.SetParent(tileHolder);
     }
+
     public void SpawnObstacle(float xPos, float yPos, float zPos)
     {
         GameObject spawnedObstacle = null;
@@ -204,17 +231,40 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(1, 20);
+                if(randomBiome == 2)
+                {
+                    snowBlockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(1, 20);
+                }
+                else
+                {
+                    blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(1, 20);
+                }
+                
             }
 
             if(SnakeMovement.Length > 50)
             {
-                blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(10, 20);
+                if (randomBiome == 2)
+                {
+                    snowBlockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(10, 20);
+                }
+                else
+                {
+                    blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(10, 20);
+                }
             }
             Vector3 rotate = transform.eulerAngles;
             rotate.y = 0;
             transform.rotation = Quaternion.Euler(rotate);
-            spawnedObstacle = Instantiate(blockPrefab, transform);
+            if (randomBiome == 2)
+            {
+                spawnedObstacle = Instantiate(snowBlockPrefab, transform);
+            }
+            else
+            {
+                spawnedObstacle = Instantiate(blockPrefab, transform);
+            }
+            //spawnedObstacle = Instantiate(blockPrefab, transform);
             spawnedObstacle.name = "Block " + xPos + " - " + zPos;
             spawnedObstacle.transform.position = new Vector3(xPos, 1, zPos);
         }
@@ -241,6 +291,21 @@ public class GameManager : MonoBehaviour
         spawnedWall = Instantiate(FencePrefabs[randomFencePrefab], transform);
         Vector3 rotate = transform.eulerAngles;
         rotate.y = 90;
+        transform.rotation = Quaternion.Euler(rotate);
+        spawnedWall.name = "Wall " + xPos + " - " + zPos;
+        spawnedWall.transform.position = new Vector3(xPos + 0.5f, 0.4f, zPos - 0.5f);
+        spawnedWall.transform.SetParent(wallHolder);
+
+    }
+
+    public void SpawnEdgeWall(float xPos, float zPos)
+    {
+        GameObject spawnedWall = null;
+
+        //spawnedWall = Instantiate(wallPrefab);
+        spawnedWall = Instantiate(FencePrefabs[randomFencePrefab], transform);
+        Vector3 rotate = transform.eulerAngles;
+        rotate.y = 0;
         transform.rotation = Quaternion.Euler(rotate);
         spawnedWall.name = "Wall " + xPos + " - " + zPos;
         spawnedWall.transform.position = new Vector3(xPos + 0.5f, 0.4f, zPos - 0.5f);
