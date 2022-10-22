@@ -29,7 +29,8 @@ public class SnakeMovement : MonoBehaviour
     private float sidewaysSpeed;
 
     public Text TextScore;
-    public Player Player;
+    public Player Player; 
+    public Text TextScoreInGame;
 
     public Rigidbody Rigidbody;
     public GameObject currentBlock;
@@ -84,8 +85,8 @@ public class SnakeMovement : MonoBehaviour
             sidewaysSpeed += delta.x * Sensitivity;
             touchLastPos = mainCamera.ScreenToViewportPoint(Input.mousePosition);
         }
-        GameManager.TextScore.text = "Score " + (Game.Score + CurrentScore).ToString();
-
+        GameManager.TextScore.text = (Game.Score + CurrentScore).ToString();
+        TextScoreInGame.text = GameManager.TextScore.text;
     }
 
     public int CurrentScore;
@@ -143,7 +144,10 @@ public class SnakeMovement : MonoBehaviour
         if (Length < 1)
         {
             Rigidbody.velocity = Vector3.zero;
+            Destroy(Game.scorePanelObject);
             Game.looseObject.gameObject.SetActive(true);
+            Game.statObject.gameObject.SetActive(true);
+            //Game.scorePanelObject.gameObject.SetActive(false);
             Time.timeScale = 0f;
             //Player.Die();
         }

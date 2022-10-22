@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     [Header("Score")]
     [Space(10)]
     public Text TextLevel;
+    public Text TextCurrLevel;
+    public Text TextNextLevel;
     public Text TextBestScore;
     public Text TextMaxLevel;
     public Text TextScore;
@@ -88,10 +90,12 @@ public class GameManager : MonoBehaviour
         GameObject tmpTile = Instantiate(finishPrefab);
         tmpTile.transform.position = new Vector3(-0.5f, 1, LevelLength - 1);
         finishZ = tmpTile.transform.position.z;
-        TextLevel.text = "Level " + (Game.LevelIndex).ToString();
-        TextBestScore.text = "Best Score " + (Game.BestScore).ToString();
-        TextMaxLevel.text = "Max Level " + (Game.MaxLevel).ToString();
-        TextScore.text = "Score " + (Game.Score + SnakeMovement.CurrentScore).ToString();
+        TextLevel.text = (Game.LevelIndex).ToString();
+        TextBestScore.text = (Game.BestScore).ToString();
+        TextMaxLevel.text = (Game.MaxLevel).ToString();
+        TextScore.text = (Game.Score + SnakeMovement.CurrentScore).ToString();
+        TextCurrLevel.text = (Game.LevelIndex).ToString();
+        TextNextLevel.text = (Game.LevelIndex + 1).ToString();
     }
     //Создание уровня по ширине и длине
     public void CreatLevel()

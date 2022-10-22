@@ -11,7 +11,13 @@ public class Game : MonoBehaviour
     public SnakeMovement snakeMovement;
     public SnakeMovement SnakeMovement;
     public GameObject winObject;
+    public GameObject statObject;
     public GameObject looseObject;
+    public GameObject scorePanelObject;
+    private void Start()
+    {
+        statObject.gameObject.SetActive(true);
+    }
     public enum State
     {
         Playing,
@@ -58,7 +64,9 @@ public class Game : MonoBehaviour
         LevelIndex++;
         Debug.Log("You won");
         //Invoke("ReloadLevel", 2);
+        Destroy(scorePanelObject);
         winObject.gameObject.SetActive(true);
+        statObject.gameObject.SetActive(true);
     }
     public int SnakeLenght
     {

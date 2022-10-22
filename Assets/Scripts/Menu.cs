@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    
+    public Game Game;
     private void Start()
     {
         Time.timeScale = 0f;

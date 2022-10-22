@@ -1,0 +1,68 @@
+{
+    "items": [
+        {
+            "key": "Level",
+            "value": "Level"
+        },
+        {
+            "key": "Best Score",
+            "value": "Best Score"
+        },
+        {
+            "key": "Score",
+            "value": "Score"
+        },
+        {
+            "key": "Max Level",
+            "value": "Max Level"
+        },
+        {
+            "key": "Menu",
+            "value": "Menu"
+        },
+        {
+            "key": "Language",
+            "value": "Language"
+        },
+        {
+            "key": "Restart",
+            "value": "Restart"
+        },
+        {
+            "key": "Play",
+            "value": "Play"
+        },
+        {
+            "key": "Exit",
+            "value": "Exit"
+        },
+        {
+            "key": "English",
+            "value": "English"
+        },
+        {
+            "key": "Russian",
+            "value": "Russian"
+        },
+        {
+            "key": "Win",
+            "value": "YOU WIN!"
+        },
+        {
+            "key": "Lose",
+            "value": "YOU LOSE"
+        },
+        {
+            "key": "Options",
+            "value": "Options"
+        },
+        {
+            "key": "Buy",
+            "value": "Buy"
+        },
+        {
+            "key": "Back",
+            "value": "Back"
+        }
+    ]
+}
