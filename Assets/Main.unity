@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ee4021ce59f313499a5cab041f02aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  translationName: "\u041C\u0443\u0437\u044B\u043A\u0430"
+  translationName: Loudness music
   FallbackText: "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u043C\u0443\u0437\u044B\u043A\u0438"
 --- !u!114 &90887338
 MonoBehaviour:
@@ -667,6 +667,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122755852}
   m_CullTransparentMesh: 1
+--- !u!1 &137803158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137803159}
+  - component: {fileID: 137803160}
+  m_Layer: 0
+  m_Name: Korean
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &137803159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137803158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 714861487}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &137803160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137803158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225ec97158446a94d9cb40a9f742a8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationCode: 
+  cultures: []
 --- !u!1 &138152542
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +963,54 @@ MonoBehaviour:
   - Language: English
     Text: Best level
     Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "M\u1EE9c \u0111\u1ED9 t\u1ED1t nh\u1EA5t"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uCD5C\uACE0\uC758 \uB808\uBCA8"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u6700\u9AD8\u306E\u30EC\u30D9\u30EB"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Tahap terbaik
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u6700\u597D\u7684\u6C34\u5E73"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: Paras taso
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: "O melhor n\xEDvel"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: El mejor nivel
+    Object: {fileID: 0}
+  - Language: French
+    Text: Le meilleur niveau
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: Das beste Level
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0623\u0641\u0636\u0644 \u0645\u0633\u062A\u0648\u0649"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u0938\u092C\u0938\u0947 \u0905\u091A\u094D\u091B\u093E \u0938\u094D\u0924\u0930"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0628\u0647\u062A\u0631\u06CC\u0646 \u0633\u0637\u062D"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u041D\u0430\u0439\u043A\u0440\u0430\u0449\u0438\u0439 \u0440\u0456\u0432\u0435\u043D\u044C"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u0415\u04A3 \u0436\u0430\u049B\u0441\u044B \u0434\u0435\u04A3\u0433\u0435\u0439"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u041B\u0435\u043F\u0448\u044B \u045E\u0437\u0440\u043E\u0432\u0435\u043D\u044C"
+    Object: {fileID: 0}
 --- !u!1 &191813850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,6 +1168,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Game: {fileID: 243540411}
   Player: {fileID: 243540410}
+--- !u!1 &226762483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 226762484}
+  - component: {fileID: 226762485}
+  m_Layer: 0
+  m_Name: Finnish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &226762484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226762483}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 714861487}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &226762485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226762483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225ec97158446a94d9cb40a9f742a8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationCode: 
+  cultures: []
 --- !u!1 &241600129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1244,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714861487}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &241600131
 MonoBehaviour:
@@ -1596,7 +1736,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 248014165}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Hindi
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &248014165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2260,7 +2412,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 327724672}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Ukrainian
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &327724672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2370,7 +2534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u043E\u0432\u044B\u0439 \u044F\u0437\u044B\u043A"
+  m_Text: "\u4E2D\u56FD\u4EBA"
 --- !u!222 &334522674
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2842,7 +3006,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 397337260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Kazakh
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &397337260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3152,6 +3328,51 @@ MonoBehaviour:
   - Language: Belarusian
     Text: "\u041C\u0435\u043D\u044E"
     Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u0414\u0430\u0441\u0442\u0430\u0440\u0445\u0430\u043D \u043C\u04D9\u0437\u0456\u0440\u0456"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u041C\u0435\u043D\u044E"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0645\u0646\u0648"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u092E\u0947\u0928\u094D\u092F\u0942"
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0637\u0639\u0627\u0645"
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: Speisekarte
+    Object: {fileID: 0}
+  - Language: French
+    Text: Menu
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "Men\xFA"
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: "Card\xE1pio"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: Valikko
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u83DC\u5355"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Menu
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u30E1\u30CB\u30E5\u30FC"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uBA54\uB274"
+    Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "Th\u1EF1c \u0111\u01A1n"
+    Object: {fileID: 0}
 --- !u!1 &424153773
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,6 +3495,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424153773}
   m_CullTransparentMesh: 1
+--- !u!1 &428486828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 428486829}
+  - component: {fileID: 428486830}
+  m_Layer: 0
+  m_Name: Malay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &428486829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428486828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 714861487}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &428486830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428486828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225ec97158446a94d9cb40a9f742a8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationCode: 
+  cultures: []
 --- !u!1 &431364665
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,7 +3651,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714861487}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &446540093
 MonoBehaviour:
@@ -3393,6 +3660,98 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 446540091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225ec97158446a94d9cb40a9f742a8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationCode: 
+  cultures: []
+--- !u!1 &459693261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 459693262}
+  - component: {fileID: 459693263}
+  m_Layer: 0
+  m_Name: Vietnamese
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &459693262
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459693261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 714861487}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &459693263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459693261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225ec97158446a94d9cb40a9f742a8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationCode: 
+  cultures: []
+--- !u!1 &461083256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461083257}
+  - component: {fileID: 461083258}
+  m_Layer: 0
+  m_Name: Japanese
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &461083257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461083256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 714861487}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &461083258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461083256}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 225ec97158446a94d9cb40a9f742a8b1, type: 3}
@@ -3451,7 +3810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ee4021ce59f313499a5cab041f02aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  translationName: "\u041C\u0443\u0437\u044B\u043A\u0430"
+  translationName: Loudness effects
   FallbackText: "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u043C\u0443\u0437\u044B\u043A\u0438"
 --- !u!114 &462416216
 MonoBehaviour:
@@ -3486,7 +3845,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u043C\u0443\u0437\u044B\u043A\u0438"
+  m_Text: "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u044D\u0444\u0444\u0435\u043A\u0442\u043E\u0432"
 --- !u!222 &462416217
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3694,7 +4053,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u043E\u0432\u044B\u0439 \u044F\u0437\u044B\u043A"
+  m_Text: "\uD55C\uAD6D\uC778"
 --- !u!222 &470703742
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4036,7 +4395,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714861487}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &488296829
 MonoBehaviour:
@@ -4414,6 +4773,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546761115}
   m_CullTransparentMesh: 1
+--- !u!1 &572791529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 572791530}
+  - component: {fileID: 572791531}
+  m_Layer: 0
+  m_Name: Loudness music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &572791530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572791529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 714861487}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &572791531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572791529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: English
+    Text: Loudness music
+    Object: {fileID: 0}
+  - Language: Russian
+    Text: "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u043C\u0443\u0437\u044B\u043A\u0438"
+    Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "\xC2m nh\u1EA1c \u1ED3n \xE0o"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uC74C\uB7C9 \uC74C\uC545"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u30E9\u30A6\u30C9\u30CD\u30B9\u97F3\u697D"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Muzik kekerasan
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u54CD\u4EAE\u97F3\u4E50"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: "\xC4\xE4nenvoimakkuusmusiikki"
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: "M\xFAsica de sonoridade"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "M\xFAsica de volumen"
+    Object: {fileID: 0}
+  - Language: French
+    Text: "Musique de l'intensit\xE9"
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: "Lautst\xE4rke Musik"
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0645\u0648\u0633\u064A\u0642\u0649 \u0627\u0644\u0635\u0648\u062A"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u0932\u093E\u0909\u0921\u0928\u0947\u0938 \u092E\u094D\u092F\u0942\u091C\u093F\u0915"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0645\u0648\u0633\u06CC\u0642\u06CC \u0628\u0644\u0646\u062F\u06CC"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u0413\u0443\u0447\u043D\u0430 \u043C\u0443\u0437\u0438\u043A\u0430"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u0414\u0430\u0443\u044B\u0441\u0442\u044B\u049B \u043C\u0443\u0437\u044B\u043A\u0430"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u041C\u0443\u0437\u044B\u043A\u0430 \u0433\u0443\u0447\u043D\u0430\u0441\u0446\u0456"
+    Object: {fileID: 0}
 --- !u!1 &575693121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4444,7 +4903,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714861487}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &575693123
 MonoBehaviour:
@@ -4816,7 +5275,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 612489641}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Finnish
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &612489641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4974,7 +5445,7 @@ GameObject:
   - component: {fileID: 670177675}
   - component: {fileID: 670177676}
   m_Layer: 0
-  m_Name: "\u049A\u0430\u0437\u0430\u049B"
+  m_Name: Kazakh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4993,7 +5464,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714861487}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &670177676
 MonoBehaviour:
@@ -5039,7 +5510,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714861487}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &682170049
 MonoBehaviour:
@@ -5091,7 +5562,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 125, y: 100}
+  m_SizeDelta: {x: 125, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683151641
 MonoBehaviour:
@@ -5218,7 +5689,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 693881642}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Korean
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &693881642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5433,7 +5916,6 @@ Transform:
   - {fileID: 1049232481}
   - {fileID: 1408590247}
   - {fileID: 2038858743}
-  - {fileID: 987628739}
   - {fileID: 488296828}
   - {fileID: 670177675}
   - {fileID: 446540092}
@@ -5444,6 +5926,14 @@ Transform:
   - {fileID: 928831888}
   - {fileID: 682170048}
   - {fileID: 575693122}
+  - {fileID: 226762484}
+  - {fileID: 807634789}
+  - {fileID: 428486829}
+  - {fileID: 461083257}
+  - {fileID: 137803159}
+  - {fileID: 459693262}
+  - {fileID: 572791530}
+  - {fileID: 1688135681}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5701,6 +6191,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764078527}
   m_CullTransparentMesh: 1
+--- !u!1 &807634788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807634789}
+  - component: {fileID: 807634790}
+  m_Layer: 0
+  m_Name: Chinese
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &807634789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807634788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 714861487}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &807634790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807634788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225ec97158446a94d9cb40a9f742a8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationCode: 
+  cultures: []
 --- !u!1 &814775866
 GameObject:
   m_ObjectHideFlags: 0
@@ -5974,7 +6510,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 897696095}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Chinese
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &897696095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6096,7 +6644,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 905315931}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Deutsch
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &905315931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6333,6 +6893,54 @@ MonoBehaviour:
   - Language: English
     Text: Options
     Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "C\xE0i \u0111\u1EB7t"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uC124\uC815"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u8A2D\u5B9A"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Tetapan
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u8BBE\u7F6E"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: asetukset
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: "Defini\xE7\xF5es"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Ajustes
+    Object: {fileID: 0}
+  - Language: French
+    Text: "R\xE9glages"
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: "\u0E01\u0E32\u0E23\u0E15\u0E31\u0E49\u0E07\u0E04\u0E48\u0E32"
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0625\u0639\u062F\u0627\u062F\u0627\u062A"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u062A\u0646\u0638\u06CC\u0645\u0627\u062A"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u062A\u0646\u0638\u06CC\u0645\u0627\u062A"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u041D\u0430\u043B\u0430\u0448\u0442\u0443\u0432\u0430\u043D\u043D\u044F"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043B\u0435\u0440"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u041D\u0430\u043B\u0430\u0434\u044B"
+    Object: {fileID: 0}
 --- !u!1 &928831887
 GameObject:
   m_ObjectHideFlags: 0
@@ -6363,7 +6971,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714861487}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &928831889
 MonoBehaviour:
@@ -6462,7 +7070,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 940682798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Spanish
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &940682798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6628,6 +7248,54 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: Russian
     Text: "\u041F\u043E\u043A\u0443\u043F\u043A\u0438"
+    Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "Mua h\xE0ng"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uAD6C\uB9E4"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u8CFC\u5165"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Kedai
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u8D2D\u4E70"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: "Kj\xF8p"
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: Compras
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Compras
+    Object: {fileID: 0}
+  - Language: French
+    Text: Achats
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: "Eink\xE4ufe"
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0627\u0644\u0645\u0634\u062A\u0631\u064A\u0627\u062A"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u0916\u0930\u0940\u0926"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u062E\u0631\u06CC\u062F\u0647\u0627"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u041F\u043E\u043A\u0443\u043F\u043A\u0438"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u0414\u04AF\u043A\u0435\u043D"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u041F\u0430\u043A\u0443\u043F\u043A\u0456"
     Object: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
@@ -11741,58 +12409,6 @@ Transform:
   m_Father: {fileID: 243540407}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!1 &987628738
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 987628739}
-  - component: {fileID: 987628740}
-  m_Layer: 0
-  m_Name: "\u041C\u0443\u0437\u044B\u043A\u0430"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &987628739
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987628738}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 714861487}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &987628740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987628738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: 0
-  entries:
-  - Language: Russian
-    Text: "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u043C\u0443\u0437\u044B\u043A\u0438"
-    Object: {fileID: 0}
-  - Language: English
-    Text: Music
-    Object: {fileID: 0}
 --- !u!1 &1049232480
 GameObject:
   m_ObjectHideFlags: 0
@@ -11844,6 +12460,54 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: Russian
     Text: "\u0420\u0435\u043A\u043E\u0440\u0434 \u043E\u0447\u043A\u043E\u0432"
+    Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "\u0110i\u1EC3m cao nh\u1EA5t"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uCD5C\uACE0 \uC810\uC218"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u6700\u9AD8\u306E\u30B9\u30B3\u30A2"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Skor terbaik
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u6700\u4F73\u5F97\u5206"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: Paras tulos
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: "Melhor pontua\xE7\xE3o"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "Mejor puntuaci\xF3n"
+    Object: {fileID: 0}
+  - Language: French
+    Text: Meilleur score
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: Bestes Ergebnis
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0623\u0641\u0636\u0644 \u0627\u0644\u0646\u062A\u064A\u062C\u0629"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u0938\u0930\u094D\u0935\u0936\u094D\u0930\u0947\u0937\u094D\u0920 \u0905\u0902\u0915"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0628\u0647\u062A\u0631\u06CC\u0646 \u0627\u0645\u062A\u06CC\u0627\u0632"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u041D\u0430\u0439\u043A\u0440\u0430\u0449\u0438\u0439 \u0431\u0430\u043B"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u04AE\u0437\u0434\u0456\u043A \u04B1\u043F\u0430\u0439"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u041B\u0435\u043F\u0448\u044B \u0440\u0430\u0445\u0443\u043D\u0430\u043A"
     Object: {fileID: 0}
 --- !u!1 &1052631142
 GameObject:
@@ -12103,6 +12767,54 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Score
+    Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "Ghi b\xE0n"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uC810\uC218"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u30B9\u30B3\u30A2"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Skor
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u5206\u6570"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: Pisteet
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: "Pontua\xE7\xE3o"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Puntaje
+    Object: {fileID: 0}
+  - Language: French
+    Text: Score
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: Punktzahl
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0646\u062A\u064A\u062C\u0629"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u0905\u0902\u0915"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0646\u0645\u0631\u0647"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u0417\u0430\u0431\u0438\u0432\u0430\u0442\u0438"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u0413\u043E\u043B"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u041B\u0456\u043A"
     Object: {fileID: 0}
 --- !u!1 &1082185510
 GameObject:
@@ -17296,7 +18008,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1148150298}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Portuguese
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1148150298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17439,6 +18163,54 @@ MonoBehaviour:
   - Language: Russian
     Text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C"
     Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "M\u1EE9c \u0111\u1ED9"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uC218\uC900"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u30EC\u30D9\u30EB"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Tahap
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u7B49\u7EA7"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: Taso
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: "N\xEDvel"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Nivel
+    Object: {fileID: 0}
+  - Language: French
+    Text: Niveau
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: Eben
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0645\u0633\u062A\u0648\u0649"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u0938\u094D\u0924\u0930"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0645\u0631\u062D\u0644\u0647"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u0420\u0456\u0432\u0435\u043D\u044C"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u0414\u0435\u04A3\u0433\u0435\u0439"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u0423\u0437\u0432\u0430\u0436\u0430\u043D\u044B"
+    Object: {fileID: 0}
 --- !u!1 &1245428479
 GameObject:
   m_ObjectHideFlags: 0
@@ -17510,7 +18282,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u043E\u0432\u044B\u0439 \u044F\u0437\u044B\u043A"
+  m_Text: Suomalainen
 --- !u!222 &1245428482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17570,6 +18342,54 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: English
     Text: Exit
+    Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "L\u1ED1i ra"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uCD9C\uAD6C"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u51FA\u53E3"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Keluar
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u51FA\u53E3"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: Poistuminen
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: "Sa\xEDda"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Salida
+    Object: {fileID: 0}
+  - Language: French
+    Text: Sortir
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: Ausgang
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0645\u062E\u0631\u062C"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u092C\u093E\u0939\u0930 \u0928\u093F\u0915\u0932\u0928\u093E"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u062E\u0631\u0648\u062C"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u0412\u0438\u0445\u0456\u0434"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u0428\u044B\u0493\u0443"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u0412\u044B\u0445\u0430\u0434\u0437\u0456\u0446\u044C"
     Object: {fileID: 0}
 --- !u!1 &1277017680
 GameObject:
@@ -17964,7 +18784,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u043E\u0432\u044B\u0439 \u044F\u0437\u044B\u043A"
+  m_Text: Melayu
 --- !u!222 &1316703158
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18123,7 +18943,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714861487}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1340167113
 MonoBehaviour:
@@ -18290,7 +19110,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u043E\u0432\u044B\u0439 \u044F\u0437\u044B\u043A"
+  m_Text: "\u65E5\u672C"
 --- !u!222 &1347670744
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18353,6 +19173,51 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: Belarusian
     Text: "\u041D\u0430\u0437\u0430\u0434"
+    Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "M\u1EB7t sau"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uB4A4"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u623B\u308B"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Kembali
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u540E\u9000"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: Takaisin
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: De volta
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: "atr\xE1s"
+    Object: {fileID: 0}
+  - Language: French
+    Text: Retour
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: "Der R\xFCcken"
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u062E\u0644\u0641"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u092A\u0940\u091B\u0947"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0628\u0627\u0632\u06AF\u0634\u062A"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u0421\u043F\u0438\u043D\u043A\u0430"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u041A\u04E9\u043C\u0435\u043A\u0442\u0435\u0441\u0443"
     Object: {fileID: 0}
 --- !u!1 &1401954672
 GameObject:
@@ -18513,6 +19378,54 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: Russian
     Text: "\u041F\u041E\u0411\u0415\u0414\u0410!"
+    Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "Chi\u1EBFn th\u1EAFng"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uC2B9\uB9AC"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u52DD\u5229"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Kemenangan
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u80DC\u5229"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: Voitto
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: "Vit\xF3ria"
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Victoria
+    Object: {fileID: 0}
+  - Language: French
+    Text: La victoire
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: Sieg
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0641\u0648\u0632"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u091C\u0940\u0924"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u067E\u06CC\u0631\u0648\u0632\u06CC"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u041F\u0435\u0440\u0435\u043C\u043E\u0433\u0430"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u0416\u0435\u04A3\u0456\u0441"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u041F\u0435\u0440\u0430\u043C\u043E\u0433\u0430"
     Object: {fileID: 0}
 --- !u!1 &1420333967
 GameObject:
@@ -18785,7 +19698,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1435687492}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Japanese
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1435687492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19060,7 +19985,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1493237297}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Arabian
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1493237297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19530,7 +20467,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714861487}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1604822629
 MonoBehaviour:
@@ -19629,7 +20566,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1620427820}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: French
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1620427820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19762,7 +20711,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1631120867}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Vietnamese
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1631120867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19921,7 +20882,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1679681334}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Malay
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1679681334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20040,6 +21013,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685731847}
   m_CullTransparentMesh: 1
+--- !u!1 &1688135680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1688135681}
+  - component: {fileID: 1688135682}
+  m_Layer: 0
+  m_Name: Loudness effects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1688135681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688135680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 714861487}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1688135682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688135680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: English
+    Text: Loudness effects
+    Object: {fileID: 0}
+  - Language: Russian
+    Text: "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u044D\u0444\u0444\u0435\u043A\u0442\u043E\u0432"
+    Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "Hi\u1EC7u \u1EE9ng \u1ED3n \xE0o"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uC74C\uB7C9 \uD6A8\uACFC"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u30E9\u30A6\u30C9\u30CD\u30B9\u52B9\u679C"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Kesan kekerasan
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u54CD\u5EA6\u6548\u679C"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: Voimakkuusvaikutukset
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: Efeitos de sonoridade
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Efectos de volumen
+    Object: {fileID: 0}
+  - Language: French
+    Text: "Effets de l'intensit\xE9"
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: "Lautst\xE4rkeeffekte"
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0622\u062B\u0627\u0631 \u0627\u0644\u0635\u0648\u062A"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u0932\u093E\u0909\u0921\u0928\u0947\u0938 \u0907\u092B\u0947\u0915\u094D\u091F\u094D\u0938"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0627\u062B\u0631\u0627\u062A \u0628\u0644\u0646\u062F\u06CC"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u0415\u0444\u0435\u043A\u0442\u0438 \u0433\u0443\u0447\u043D\u043E\u0441\u0442\u0456"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u0414\u0430\u0443\u044B\u0441\u0442\u044B\u049B \u04D9\u0441\u0435\u0440\u043B\u0435\u0440"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u042D\u0444\u0435\u043A\u0442\u044B \u0433\u0443\u0447\u043D\u0430\u0441\u0446\u0456"
+    Object: {fileID: 0}
 --- !u!1 &1694002342
 GameObject:
   m_ObjectHideFlags: 0
@@ -20539,6 +21612,55 @@ MonoBehaviour:
   - Language: Russian
     Text: "\u0417\u0430\u043D\u043E\u0432\u043E"
     Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "Kh\u1EDFi \u0111\u1ED9ng l\u1EA1i"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uC7AC\uC2DC\uC791"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u518D\u8D77\u52D5"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Mula semula
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u91CD\u65B0\u5F00\u59CB"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: "Uudelleenk\xE4ynnist\xE4\xE4"
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: Reiniciar
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Reiniciar
+    Object: {fileID: 0}
+  - Language: French
+    Text: "Red\xE9marrer"
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: Neu starten
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0625\u0639\u0627\u062F\u0629 \u0628\u062F\u0621"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u092A\u0941\u0928\u0930\u094D\u092A\u094D\u0930\u093E\u0930\u0902\u092D
+      \u0915\u0930\u0947\u0902"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0645\u062C\u062F\u062F\u0627\u064B"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u041F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u0438"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u049A\u0430\u0439\u0442\u0430\u0434\u0430\u043D \u049B\u043E\u0441\u0443"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u041F\u0435\u0440\u0430\u0437\u0430\u043F\u0443\u0441\u043A"
+    Object: {fileID: 0}
 --- !u!1 &1788328958
 GameObject:
   m_ObjectHideFlags: 0
@@ -20610,7 +21732,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u041D\u043E\u0432\u044B\u0439 \u044F\u0437\u044B\u043A"
+  m_Text: "Ti\u1EBFng Vi\u1EC7t"
 --- !u!222 &1788328961
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20896,7 +22018,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714861487}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1847224597
 MonoBehaviour:
@@ -22591,6 +23713,54 @@ MonoBehaviour:
   - Language: English
     Text: YOU LOSE!
     Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "\u0110\xE1nh b\u1EA1i"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uD328\uBC30\uC2DC\uD0A4\uB2E4"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u6557\u5317"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Kekalahan
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u6253\u8D25"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: Tappio
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: Derrota
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Vencer
+    Object: {fileID: 0}
+  - Language: French
+    Text: "D\xE9faite"
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: Verlust
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u0939\u093E\u0930"
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u064A\u0647\u0632\u0645"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0634\u06A9\u0633\u062A"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u041F\u043E\u0440\u0430\u0437\u043A\u0430"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u0422\u0430\u043B\u049B\u0430\u043D\u0434\u0430\u0443"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u041F\u0430\u0440\u0430\u0436\u044D\u043D\u043D\u0435"
+    Object: {fileID: 0}
 --- !u!1 &2040146779
 GameObject:
   m_ObjectHideFlags: 0
@@ -22930,7 +24100,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2116374877}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 714861486}
+        m_TargetAssemblyTypeName: Lean.Localization.LeanLocalization, LeanLocalization
+        m_MethodName: SetCurrentLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Persian
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2116374877
 MonoBehaviour:
   m_ObjectHideFlags: 0
