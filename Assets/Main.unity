@@ -18111,6 +18111,54 @@ MonoBehaviour:
   - Language: Russian
     Text: "\u0418\u0433\u0440\u0430\u0442\u044C"
     Object: {fileID: 0}
+  - Language: Vietnamese
+    Text: "Ch\u01A1i"
+    Object: {fileID: 0}
+  - Language: Korean
+    Text: "\uB180\uB2E4"
+    Object: {fileID: 0}
+  - Language: Japanese
+    Text: "\u904A\u3076"
+    Object: {fileID: 0}
+  - Language: Malay
+    Text: Main
+    Object: {fileID: 0}
+  - Language: Chinese
+    Text: "\u73A9"
+    Object: {fileID: 0}
+  - Language: Finnish
+    Text: pelata
+    Object: {fileID: 0}
+  - Language: Portuguese
+    Text: Toque
+    Object: {fileID: 0}
+  - Language: Spanish
+    Text: Tocar
+    Object: {fileID: 0}
+  - Language: French
+    Text: Jouer
+    Object: {fileID: 0}
+  - Language: Deutsch
+    Text: Spielen
+    Object: {fileID: 0}
+  - Language: Arabian
+    Text: "\u0644\u0639\u0628"
+    Object: {fileID: 0}
+  - Language: Hindi
+    Text: "\u0916\u0947\u0932\u0947\u0902"
+    Object: {fileID: 0}
+  - Language: Persian
+    Text: "\u0628\u0627\u0632\u06CC"
+    Object: {fileID: 0}
+  - Language: Ukrainian
+    Text: "\u0413\u0440\u0430\u0442\u0438"
+    Object: {fileID: 0}
+  - Language: Kazakh
+    Text: "\u041E\u0439\u043D\u0430\u0443"
+    Object: {fileID: 0}
+  - Language: Belarusian
+    Text: "\u0413\u0443\u043B\u044F\u0446\u044C"
+    Object: {fileID: 0}
 --- !u!1 &1198961469
 GameObject:
   m_ObjectHideFlags: 0
