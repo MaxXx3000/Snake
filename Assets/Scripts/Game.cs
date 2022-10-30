@@ -63,7 +63,6 @@ public class Game : MonoBehaviour
         }
         LevelIndex++;
         Debug.Log("You won");
-        //Invoke("ReloadLevel", 2);
         Destroy(scorePanelObject);
         winObject.gameObject.SetActive(true);
         statObject.gameObject.SetActive(true);

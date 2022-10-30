@@ -15,6 +15,7 @@ public class SnakeMovement : MonoBehaviour
     public Game Game;
     public SnakeTail SnakeTail;
     public ObstacleObject ObstacleObject;
+    public Achievements Achievements;
 
     public TextMeshPro PointsText;
 
@@ -95,20 +96,22 @@ public class SnakeMovement : MonoBehaviour
         if (collision.gameObject.tag == "Food")
         {
             grow = collision.gameObject.GetComponent<ObstacleObject>().hp;
-            //Debug.Log("Food");
             foodCrush.Play();
             Destroy(collision.gameObject);
             Length += grow;
             CurrentScore += grow;
             componentSnakeTail.AddCircle();
             PointsText.SetText(Length.ToString());
+            if (Length > Achievements.maxSnakeLenght)
+            {
+                Achievements.maxLenght = Length;
+            }
         }
         else if (collision.gameObject.tag == "Block")
         {
             currentBlock = collision.gameObject;
             damage = collision.gameObject.GetComponent<ObstacleObject>().hp;
-            ObstacleObject.hp = damage;            
-            //Debug.Log("Block");
+            ObstacleObject.hp = damage;          
             timer += Time.deltaTime;
             
             if (timer > 0.1f)
@@ -147,9 +150,7 @@ public class SnakeMovement : MonoBehaviour
             Destroy(Game.scorePanelObject);
             Game.looseObject.gameObject.SetActive(true);
             Game.statObject.gameObject.SetActive(true);
-            //Game.scorePanelObject.gameObject.SetActive(false);
             Time.timeScale = 0f;
-            //Player.Die();
         }
 
         if (ObstacleObject.hp == 1)
