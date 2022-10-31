@@ -250,11 +250,11 @@ public class GameManager : MonoBehaviour
             {
                 if (randomBiome == 2)
                 {
-                    snowBlockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(10, 20);
+                    snowBlockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(1, 20);
                 }
                 else
                 {
-                    blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(10, 20);
+                    blockPrefab.GetComponent<ObstacleObject>().hp = Random.Range(1, 20);
                 }
             }
             Vector3 rotate = transform.eulerAngles;

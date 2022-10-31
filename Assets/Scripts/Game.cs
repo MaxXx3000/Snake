@@ -18,6 +18,13 @@ public class Game : MonoBehaviour
     {
         statObject.gameObject.SetActive(true);
     }
+    private void Update()
+    {
+        if (MaxSnakeLenght < SnakeMovement.Length)
+        {
+            MaxSnakeLenght = SnakeMovement.Length;
+        }
+    }
     public enum State
     {
         Playing,
@@ -38,13 +45,12 @@ public class Game : MonoBehaviour
         {
             BestScore = Score;
         }
+        Die++;
         SnakeMovement.CurrentScore = 0;
         LevelIndex = 1;
         Score = 0;        
         SnakeLenght = 1;
-        Debug.Log("Game over");
         Invoke("ReloadLevel", 0);
-        //looseObject.gameObject.SetActive(true);
 
     }
 
@@ -62,7 +68,6 @@ public class Game : MonoBehaviour
             BestScore = Score;
         }
         LevelIndex++;
-        Debug.Log("You won");
         Destroy(scorePanelObject);
         winObject.gameObject.SetActive(true);
         statObject.gameObject.SetActive(true);
@@ -77,6 +82,26 @@ public class Game : MonoBehaviour
         }
     }
     public const string SnakeLenghtKey = "SnakeLenght";
+    public int MaxSnakeLenght
+    {
+        get => PlayerPrefs.GetInt(MaxSnakeLenghtKey, 0);
+        private set
+        {
+            PlayerPrefs.SetInt(MaxSnakeLenghtKey, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public const string MaxSnakeLenghtKey = "MaxSnakeLenght";
+    public int Die
+    {
+        get => PlayerPrefs.GetInt(DieKey, 0);
+        private set
+        {
+            PlayerPrefs.SetInt(DieKey, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public const string DieKey = "Die";
     public int LevelIndex
     {
         get => PlayerPrefs.GetInt(LevelIndexKey, 1);

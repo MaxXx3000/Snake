@@ -102,10 +102,6 @@ public class SnakeMovement : MonoBehaviour
             CurrentScore += grow;
             componentSnakeTail.AddCircle();
             PointsText.SetText(Length.ToString());
-            if (Length > Achievements.maxSnakeLenght)
-            {
-                Achievements.maxLenght = Length;
-            }
         }
         else if (collision.gameObject.tag == "Block")
         {
