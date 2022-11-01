@@ -10,13 +10,20 @@ public class Game : MonoBehaviour
 {
     public SnakeMovement snakeMovement;
     public SnakeMovement SnakeMovement;
+    public Achievements Achievements;
     public GameObject winObject;
     public GameObject statObject;
     public GameObject looseObject;
     public GameObject scorePanelObject;
+
+    public int SNKAch;
+
     private void Start()
     {
+        SNKMoney += SNKAch;
         statObject.gameObject.SetActive(true);
+        Debug.Log("Money= " + SNKMoney);
+        Debug.Log("MaxSnakeLenght= " + MaxSnakeLenght);
     }
     private void Update()
     {
@@ -53,9 +60,10 @@ public class Game : MonoBehaviour
         Invoke("ReloadLevel", 0);
 
     }
-
     public void OnPlayerReachedFinish()
     {
+        SNKMoney += 1;
+
         if (CurrentState != State.Playing) return;
 
         Currentcore = SnakeMovement.CurrentScore;
@@ -111,9 +119,7 @@ public class Game : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-
     public const string LevelIndexKey = "LevelIndex";
-
     public int BestScore
     {
         get => PlayerPrefs.GetInt(BestScoreKey, 0);
@@ -123,9 +129,7 @@ public class Game : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-
     public const string BestScoreKey = "BestScore";
-
     public int Score
     {
         get => PlayerPrefs.GetInt(ScoreKey, 0);
@@ -135,9 +139,7 @@ public class Game : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-
     public const string ScoreKey = "Score";
-
     public int MaxLevel
     {
         get => PlayerPrefs.GetInt(MaxLevelKey, 0);
@@ -147,9 +149,17 @@ public class Game : MonoBehaviour
             PlayerPrefs.Save();
         }
     }
-
-    public const string MaxLevelKey = "MaxLevel";
-
+    public const string MaxLevelKey = "MaxLevel";    
+    public int SNKMoney
+    {
+        get => PlayerPrefs.GetInt(SNKMoneyKey, 0);
+        private set
+        {
+            PlayerPrefs.SetInt(SNKMoneyKey, value);
+            PlayerPrefs.Save();
+        }
+    }
+    public const string SNKMoneyKey = "SNKMoney";
     public void ReloadLevel()
     {
         if (MaxLevel < LevelIndex)

@@ -7,6 +7,7 @@ public class Achievements : MonoBehaviour
 {
     public Game Game;
     public SnakeMovement SnakeMovement;
+
     public GameObject achScore;
     public GameObject achScore0;
     public GameObject achScore1;
@@ -44,14 +45,14 @@ public class Achievements : MonoBehaviour
     private int Die2 = 50;
     private int Die3 = 100;
 
-    void Update()
+    private void Start()
     {
         AchievementScore();
         AchievementSnakeLenght();
         AchievementLevel();
         AchievementDie();
     }
-
+  
     public void AchievementScore()
     {
         if (Game.BestScore < Score1)
@@ -60,13 +61,13 @@ public class Achievements : MonoBehaviour
             achScore.SetActive(true);
             TextAchScore.text = Score1.ToString();
         }
-        else if (Game.BestScore >= Score1)
+        else if (Game.BestScore >= Score1 && Game.BestScore < Score2)
         {
             achScore = achScore1;
             achScore.SetActive(true);
             TextAchScore.text = Score2.ToString();
         }
-        else if (Game.BestScore >= Score2)
+        else if (Game.BestScore >= Score2 && Game.BestScore < Score3)
         {
             achScore = achScore2;
             achScore.SetActive(true);
@@ -87,13 +88,13 @@ public class Achievements : MonoBehaviour
             achDie.SetActive(true);
             TextAchDie.text = Die1.ToString();
         }
-        else if (Game.Die >= Die1)
+        else if (Game.Die >= Die1 && Game.Die < Die2)
         {
             achDie = achDie1;
             achDie.SetActive(true);
             TextAchDie.text = Die2.ToString();
         }
-        else if (Game.Die >= Die2)
+        else if (Game.Die >= Die2 && Game.Die < Die3)
         {
             achDie = achDie2;
             achDie.SetActive(true);
@@ -114,13 +115,13 @@ public class Achievements : MonoBehaviour
             achLevel.SetActive(true);
             TextAchLevel.text = Level1.ToString();
         }
-        else if (Game.MaxLevel >= Level1)
+        else if (Game.MaxLevel >= Level1 && Game.MaxLevel < Level2)
         {
             achLevel = achLevel1;
             achLevel.SetActive(true);
             TextAchLevel.text = Level2.ToString();
         }
-        else if (Game.MaxLevel >= Level2)
+        else if (Game.MaxLevel >= Level2 && Game.MaxLevel < Level3)
         {
             achLevel = achLevel2;
             achLevel.SetActive(true);
@@ -133,7 +134,6 @@ public class Achievements : MonoBehaviour
             TextAchLevel.text = "XXXX".ToString();
         }
     }
-
     public void AchievementSnakeLenght()
     {
         if (Game.MaxSnakeLenght < SnakeLenght1)
@@ -142,13 +142,13 @@ public class Achievements : MonoBehaviour
             achSnakeLenght.SetActive(true);
             TextAchSnakeLenght.text = SnakeLenght1.ToString();
         }
-        else if (Game.MaxSnakeLenght >= SnakeLenght1)
+        else if (Game.MaxSnakeLenght >= SnakeLenght1 && Game.MaxSnakeLenght < SnakeLenght2)
         {
             achSnakeLenght = achSnakeLenght1;
             achSnakeLenght.SetActive(true);
             TextAchSnakeLenght.text = SnakeLenght2.ToString();
         }
-        else if (Game.MaxSnakeLenght >= SnakeLenght2)
+        else if (Game.MaxSnakeLenght >= SnakeLenght2 && Game.MaxSnakeLenght < SnakeLenght3)
         {
             achSnakeLenght = achSnakeLenght2;
             achSnakeLenght.SetActive(true);
@@ -161,7 +161,6 @@ public class Achievements : MonoBehaviour
             TextAchSnakeLenght.text = "XXXX".ToString();
         }
     }
-
 }
 
 

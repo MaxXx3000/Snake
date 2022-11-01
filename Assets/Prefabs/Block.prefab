@@ -121,9 +121,9 @@ MonoBehaviour:
   SnakeMovement: {fileID: 0}
   _text: {fileID: 4264452250345048990}
   _textDamage: {fileID: 0}
-  hp: 0
-  floatHP: 0
-  hpf: 0
+  hp: 1
+  floatHP: 0.05
+  hpf: 1
   hpMax: 20
   tmplMax: 20
 --- !u!222 &7577165568190771270
