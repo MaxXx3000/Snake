@@ -11,7 +11,7 @@ public class CameraFollower : MonoBehaviour
         
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Vector3 transformPosition = transform.position;
         transformPosition.z = Target.position.z - otstavanie;

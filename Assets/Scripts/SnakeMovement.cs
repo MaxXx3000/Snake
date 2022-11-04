@@ -48,7 +48,6 @@ public class SnakeMovement : MonoBehaviour
     }
     private void Start()
     {
-        
         mainCamera = Camera.main;
         componentRigidbody = GetComponent<Rigidbody>();
         componentSnakeTail = GetComponent<SnakeTail>();

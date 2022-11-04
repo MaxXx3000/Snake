@@ -15,12 +15,13 @@ public class Game : MonoBehaviour
     public GameObject statObject;
     public GameObject looseObject;
     public GameObject scorePanelObject;
+    
 
     public int SNKAch;
 
     private void Start()
     {
-        SNKMoney += SNKAch;
+        //SNKMoney += SNKAch;
         statObject.gameObject.SetActive(true);
         Debug.Log("Money= " + SNKMoney);
         Debug.Log("MaxSnakeLenght= " + MaxSnakeLenght);
@@ -62,7 +63,7 @@ public class Game : MonoBehaviour
     }
     public void OnPlayerReachedFinish()
     {
-        SNKMoney += 1;
+        //SNKMoney += 1;
 
         if (CurrentState != State.Playing) return;
 

@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YandexMobileAds;
+using YandexMobileAds.Base;
 
 public class Player : MonoBehaviour
 {
@@ -10,13 +12,15 @@ public class Player : MonoBehaviour
     public ParticleSystem effectDie;
     public ParticleSystem effectFinish;
 
+    public YandexMobileAdsInterstitialDemoScript YandexMobileAdsInterstitialDemoScript;
     public SnakeMovement SnakeMovement;
     public Game Game;
 
     public void ReachFinish()
     {
-        //Invoke("Game.OnPlayerReachedFinish", 1);
-        Game.OnPlayerReachedFinish();
+        YandexMobileAdsInterstitialDemoScript.RequestInterstitial();
+        Invoke("Game.OnPlayerReachedFinish", 5);
+        //Game.OnPlayerReachedFinish();
         Rigidbody.velocity = Vector3.zero;
         //effectFinish.Play();
         
